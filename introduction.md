@@ -1,0 +1,14 @@
+# Introduction
+
+The advances in technology over the past 30 years have brought us treasure troves of data. With the rise of the Internet especially, we are living in the world filled with information. Internet of things, big data and cloud are just some of the commonly used buzzwords that are often used in popular media. As the century turned, data had become the new oil. New industries have been born out of nowhere as more and more people realized that information is power.
+
+We live in an age where products we use know more about ourselves than we do. In 2016, data had been weaponized to change public opinion during the US presidential elections. Chief executive officer of a consulting company employed by the presidential elect Donald Trump has been quoted as saying that they keep four to five thousand data points on nearly two thirds of US population.[1] This data has been used to classify individuals based on political preferences and to use this information for targetted advertising. The Cambridge Analytica dataset is just one example of big data, a popular term that denotes data of high volume, variety (form of data), veracity (uncertainty) and velocity.[2]
+
+However, if we are to gain insight from such data, we have to find effective ways of analyzing it. Data analytics is the process of finding, interpreting and communicating data. Data visualization provides an effective means of communicating the results using visual representations. A related term that is often used interchangeably with-, but is often thought of as a superset of data analytics software, is Business intelligence (BI). BI software incorporate so-called decision support technologies, which include predictive analytics, benchmarking and various kinds of other tool. They utilize special databases that are capable of handling big data.[3]
+
+In the next chapter we will discuss the implications of using virtual reality (VR) technology in the context of data visualization.
+
+
+1. https://news.sky.com/story/behind-the-scenes-at-donald-trumps-uk-digital-war-room-10626155
+2. https://www.ibmbigdatahub.com/infographic/four-vs-big-data
+3. https://cacm.acm.org/magazines/2011/8/114953-an-overview-of-business-intelligence-technology/fulltext
