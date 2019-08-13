@@ -1,5 +1,19 @@
 # Appendices
 
+## Key-stroke level model (KLM)
+
+| Operator | Description | Time (s) |
+| --- | --- | --- |
+| P | Pointing to a target on a display with a mouse. | 1.1[a]
+| H | Homing the hand(s) on the keyboard or other device. | 0.4 |
+| M | Mentally preparing for executing physical actions. | 1.35 |
+| B[b] | Clicking a mouse button. | 0.2 |
+Excerpt of used operators.[1]
+
+a. Varies with distance and target size according to Fitts's Law: t_p = 0.8 + 0.1 * log2(d / s + 0.5) s
+
+b. Not present as a separate action in the original paper. Instead it is included as part of the homing motion.
+
 ## Video transcripts
 
 The following are transcripts from videos that were created to explain the different parts of our application and also the user interface and controls of our virtual reality component in 3DOF and 6DOF versions.
@@ -37,3 +51,5 @@ Next, let's learn how to add a plot. Point at the floor and hold the trigger. Mo
 You now know how to create plots and load datasets. The last thing you need to learn is how to work with attributes. To assign an attribute to a plot, just drag the attribute from the databrush onto one of the axes using the trigger button. You can also map an attribute onto a non-spatial feature of the plot such as color or size. In order to remove an assignment, just click on the attribute's label. You can also change the bounds of selected spatial attributes by clicking on the scales. This is useful for more complex datasets.
 
 Lastly, let's learn about versioning. Versioning allows you to keep multiple copies of a single dataset. After enabling versioning inside Cyberplot Manager, you can change between the versions straight from your databrush. And that covers the basics of Cyberplot Navigator. Have fun exploring your data.
+
+1. https://dl.acm.org/citation.cfm?doid=358886.358895
