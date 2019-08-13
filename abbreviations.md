@@ -8,10 +8,12 @@
 | AR | Augumented reality |
 | BI | Business intelligence |
 | HMD | Head-mounted display |
+| KLM | Keystroke-level model |
 | LINQ | Language Integrated Query |
 | ORM | Object-relational mapping |
 | SDK | Software development kit |
 | SPA | Single-page application |
 | SQL | Structured Query Language |
 | REST | Representational State Transfer |
+| UI | User interface |
 | VR | Virtual reality |
