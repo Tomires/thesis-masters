@@ -9,6 +9,7 @@
 | BI | Business intelligence |
 | HMD | Head-mounted display |
 | KLM | Keystroke-level model |
+| LAN | Local area network |
 | LINQ | Language Integrated Query |
 | ORM | Object-relational mapping |
 | SDK | Software development kit |
