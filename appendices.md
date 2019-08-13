@@ -4,15 +4,18 @@
 
 | Operator | Description | Time (s) |
 | --- | --- | --- |
-| P | Pointing to a target on a display with a mouse. | 1.1[a]
+| K | Keystroke or button press. | 0.28[a] |
+| P | Pointing to a target on a display with a mouse. | 1.1[b]
 | H | Homing the hand(s) on the keyboard or other device. | 0.4 |
 | M | Mentally preparing for executing physical actions. | 1.35 |
-| B[b] | Clicking a mouse button. | 0.2 |
+| B[c] | Clicking a mouse button. | 0.2 |
 Excerpt of used operators.[1]
 
-a. Varies with distance and target size according to Fitts's Law: t_p = 0.8 + 0.1 * log2(d / s + 0.5) s
+a. Non-secretary typist average (40 words per minute)
 
-b. Not present as a separate action in the original paper. Instead it is included as part of the homing motion.
+b. Varies with distance and target size according to Fitts's Law: t_p = 0.8 + 0.1 * log2(d / s + 0.5) s
+
+c. Not present as a separate action in the original paper. Instead it is included as part of the homing motion.
 
 ## Video transcripts
 
