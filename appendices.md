@@ -13,7 +13,7 @@ Excerpt of used operators.[1]
 
 a. Non-secretary typist average (40 words per minute)
 
-b. Varies with distance and target size according to Fitts's Law: t_p = 0.8 + 0.1 * log2(d / s + 0.5) s
+b. Average. Varies with distance and target size according to Fitts's Law: t_p = 0.8 + 0.1 * log2(d / s + 0.5) s
 
 c. Not present as a separate action in the original paper. Instead it is included as part of the homing motion.
 
@@ -23,7 +23,7 @@ The following are transcripts from videos that were created to explain the diffe
 
 ### Introduction
 
-Hello, and welcome to cyberplot, a fresh new way to look at your data. Cyberplot consists of three components - plugins, manager and navigator.
+Hello, and welcome to cyberplot, a fresh new way to look at your data. Cyberplot consists of three components - plugins, Manager and Navigator.
 
 You can use plugins to integrate cyberplot into your programming environment of choice, such as Python or R. Using our API integrations is easy, just follow the instructions.
 
