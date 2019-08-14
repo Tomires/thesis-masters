@@ -16,7 +16,7 @@ Brushing and linking techniques form an important part of any tool for interacti
 
 As discussed earlier, many similar tools leverage the power of presence in virtual reality to create multi-person sessions, where stakeholders can view and edit data plots and communicate with one another without leaving VR.
 
-We plan to utilize an existing solution called Oculus Avatars, which despite its name is available for all major VR platforms.[3] We feel that brushing techniques will form an integral part of the connected experience and as such, sharing system has a lower priority that the aforementioned features.
+We plan to utilize an existing solution called Oculus Avatars, which despite its name is available for all major VR platforms.[3] We feel that brushing techniques will form an integral part of the connected experience and as such, sharing system has a lower priority that the aforementioned features. The feature should allow all stakeholders to interact with visualizations at the same time, unlike ParaView's master-slave approach.
 
 ## Performance optimization
 
