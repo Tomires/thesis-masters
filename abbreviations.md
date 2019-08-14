@@ -8,6 +8,7 @@
 | AR | Augumented reality |
 | BI | Business intelligence |
 | HMD | Head-mounted display |
+| IPD | Interpupilary distance |
 | KLM | Keystroke-level model |
 | LAN | Local area network |
 | LINQ | Language Integrated Query |
@@ -18,3 +19,4 @@
 | REST | Representational State Transfer |
 | UI | User interface |
 | VR | Virtual reality |
+| WIMP | Windows-Icons-Menus-Pointing |

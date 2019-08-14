@@ -78,12 +78,30 @@ The total time to complete our tasks is 75.74 seconds. Overall, ParaView seems l
 
 ## Benefits of VR
 
-focus on only visualization
-part of BI pipeline?
+We believe that virtual reality has the potential to enhance the visualization experience. Let us explore several reasons why.
 
-stereo view
-spatial interfaces - more natural UX
-immersive analytics
+### Stereoscopic view, 6DOF
+
+Head-mounted displays (HMD) are by design stereoscopic. One study compared error rates on a conventional monitor against a stereoscopic solution with eye separation (interpupilary distance, IPD) of 6.4 cm. It also focused on the benefits of dynamic motion for perception.[3]
+
+The findings were that the use of both dynamic motion and stereoscopy significantly reduced error rates (by 10% in inexperienced participants, n=14 and 15-30% in experienced participants, n=2). Combination of these two methods led to further improvement.
+
+With modern HMDs we can leverage both of these methods as 6 degrees of freedom (6DOF) headsets allow the user to freely position their head in space, simulating motion.
+
+### Spatial interface
+
+Researchers and designers alike have been looking at replacing the traditional Windows-Icons-Menus-Pointing (WIMP) desktop metaphors with 3D since the early 90s. The new interfaces instead rely on hand gestures and speech recognition to navigate around 3D space. One article from the era argues that users are frustrated by many layers of *point and click* and visual clutter that is common with WIMP UIs and discusses the limitations of relying exclusively on the sense of sight. The author prophesizes rise of virtual reality and proceeds to discuss potential applications.[4]
+
+Innovative examples such as Google Earth VR prove that well-designed spatial interfaces have the potential to make UI more intuitive, especially to first-time users.[5]
+
+### Immersive analytics
+
+The full use of one's visual field as well as senses of touch (through force feedback) and spatial sound allows the user to fully immerse themselves into their data, which has potential to improve their concentration.
+
+Furthermore, they have the ability to invite other users into their virtual space, which allows for multi-user interactions with plots inside the space.
 
 1. https://dl.acm.org/citation.cfm?doid=358886.358895
 2. https://www.paraview.org/
+3. https://dl.acm.org/citation.cfm?id=1279642
+4. https://dl.acm.org/citation.cfm?id=253708
+5. https://www.gdcvault.com/play/1024762/UX-in-Google-Earth-VR
