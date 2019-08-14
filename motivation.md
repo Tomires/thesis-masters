@@ -44,7 +44,7 @@ The following table lists all KLM operations necessary to complete our task.
 
 | Operator | Description | Time (s) |
 |---|---|---|
-| M | Initiate file open | 1.35 |
+| M | Initiate opening a file | 1.35 |
 | M | Find file open button | 1.35 |
 | PB | Point at the button and press it | 1.3 |
 | PB | Select file and double click it | 1.3 |
@@ -92,7 +92,7 @@ The following table lists all KLM operations necessary to complete a simplified 
 
 | Operator | Description | Time (s) |
 |---|---|---|
-| M | Initiate file open | 1.35 |
+| M | Initiate opening a file | 1.35 |
 | M | Find *More...* button on sidebar | 1.35 |
 | PB | Point at the button and press it | 1.3 |
 | PB | Select file and double click it | 1.3 |
