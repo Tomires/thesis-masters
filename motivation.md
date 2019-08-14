@@ -46,7 +46,7 @@ The following table lists all KLM operations necessary to complete our task.
 |---|---|---|
 | M | Initiate file open | 1.35 |
 | M | Find file open button | 1.35 |
-| PB | Point to the button and press it | 1.3 |
+| PB | Point at the button and press it | 1.3 |
 | PB | Select file and double click it | 1.3 |
 | M | Find properties panel | 1.35 |
 | PB | Point on *Apply* button and press it | 1.3 |
@@ -76,13 +76,49 @@ The total time to complete our tasks is 75.74 seconds. Overall, ParaView seems l
 
 ### Tableau
 
+Tableau is a commonly used software for business intelligence. It allows the user to load data by opening a local file (csv, JSON, Excel spreadsheet) or connecting to a database (MSSQL, Oracle, MySQL, Amazon Redshift and more). The number of database integrations is much larger than the number of support types of local files indicative of the product's focus on enterprise and big data. The desktop application is available for Windows and macOS.[3]
+
+![Result of our example workflow](images/tableau_sheet.png)
+
+The company also offers a product called Tableau Server which enables the users to  modify their data online using either a publicly hosted service or an on-premises server.
+
+The client software includes a very straightforward and easy to use interface. The user loads a dataset and is presented with a tabular view. Data types are automatically detected, as is the column delimiter (in case of csv files). In this view, the user is also able to pre-filter data by selecting a threshold and removing null values. They are then able to create a *sheet*, a metaphor commonly used in spreadsheet software. The user then selects attributes they would like to use by dragging them into a *Dimensions* list and afterwards can map them onto rows, columns and non-spatial features of the two-dimensional scatter plot. 
+
+Unfortunately, as of version 2019.2.2, Tableau does not have native support for three-dimensional plots. There is a workaround for creating pseudo-3D plots, but it requires the use of a SQL database and is not user-friendly at all, being more of a hack than a proper solution.[4]
+
+![Tableau's edit view](images/tableau_edit.png)
+
+The following table lists all KLM operations necessary to complete a simplified task of creating a two-dimensional scatter plot.
+
+| Operator | Description | Time (s) |
+|---|---|---|
+| M | Initiate file open | 1.35 |
+| M | Find *More...* button on sidebar | 1.35 |
+| PB | Point at the button and press it | 1.3 |
+| PB | Select file and double click it | 1.3 |
+| M	| Locate *Sheet1* tab | 1.35 |
+| PB | Point at the tab and press it | 1.3 |
+| M | Locate *Measures* and *Dimensions* lists | 1.35 |
+| 3*(PBPB) | Move attributes we want to display on spatial and color dimensions from *Measures* to *Dimensions* | 7.8 |
+| M | Locate plot dimension settings | 1.35 |
+| 2*(PBPB) | Move spatial attributes from *Dimensions* list to *Columns* and *Plots* respectively | 5.2 |
+| 2*(PBPB) | Click on both assignments and select *Continuous* from dropdown menu | 5.2 |
+| PBPB | Move attribute which we want to assign to color from *Dimensions* onto *Color* subsection of *Marks* panel | 2.6 |
+| M | Locate axis we want to slice | 1.35 |
+| PBPB | Right click on the axis and select *Edit Axis* from dropdown | 2.6 |
+| PB | Select *Fixed* radio button | 1.3 |
+| PBHKKKH | Input desired value to *Fixed end* textbox | 2.94 |
+| PB | Close the modal | 1.3 |
+
+The total time to complete our tasks is 40.94 seconds, half of the time of a similar workflow in ParaView. However, we have only been able to create a two-dimensional scatter plot due to software's limitations.
+
 ## Benefits of VR
 
 We believe that virtual reality has the potential to enhance the visualization experience. Let us explore several reasons why.
 
 ### Stereoscopic view, 6DOF
 
-Head-mounted displays (HMD) are by design stereoscopic. One study compared error rates on a conventional monitor against a stereoscopic solution with eye separation (interpupilary distance, IPD) of 6.4 cm. It also focused on the benefits of dynamic motion for perception.[3]
+Head-mounted displays (HMD) are by design stereoscopic. One study compared error rates on a conventional monitor against a stereoscopic solution with eye separation (interpupilary distance, IPD) of 6.4 cm. It also focused on the benefits of dynamic motion for perception.[5]
 
 The findings were that the use of both dynamic motion and stereoscopy significantly reduced error rates (by 10% in inexperienced participants, n=14 and 15-30% in experienced participants, n=2). Combination of these two methods led to further improvement.
 
@@ -90,9 +126,9 @@ With modern HMDs we can leverage both of these methods as 6 degrees of freedom (
 
 ### Spatial interface
 
-Researchers and designers alike have been looking at replacing the traditional Windows-Icons-Menus-Pointing (WIMP) desktop metaphors with 3D since the early 90s. The new interfaces instead rely on hand gestures and speech recognition to navigate around 3D space. One article from the era argues that users are frustrated by many layers of *point and click* and visual clutter that is common with WIMP UIs and discusses the limitations of relying exclusively on the sense of sight. The author prophesizes rise of virtual reality and proceeds to discuss potential applications.[4]
+Researchers and designers alike have been looking at replacing the traditional Windows-Icons-Menus-Pointing (WIMP) desktop metaphors with 3D since the early 90s. The new interfaces instead rely on hand gestures and speech recognition to navigate around 3D space. One article from the era argues that users are frustrated by many layers of *point and click* and visual clutter that is common with WIMP UIs and discusses the limitations of relying exclusively on the sense of sight. The author prophesizes rise of virtual reality and proceeds to discuss potential applications.[6]
 
-Innovative examples such as Google Earth VR prove that well-designed spatial interfaces have the potential to make UI more intuitive, especially to first-time users.[5]
+Innovative examples such as Google Earth VR prove that well-designed spatial interfaces have the potential to make UI more intuitive, especially to first-time users.[7]
 
 ### Immersive analytics
 
@@ -102,6 +138,8 @@ Furthermore, they have the ability to invite other users into their virtual spac
 
 1. https://dl.acm.org/citation.cfm?doid=358886.358895
 2. https://www.paraview.org/
-3. https://dl.acm.org/citation.cfm?id=1279642
-4. https://dl.acm.org/citation.cfm?id=253708
-5. https://www.gdcvault.com/play/1024762/UX-in-Google-Earth-VR
+3. https://www.tableau.com/
+4. https://boraberan.wordpress.com/2015/12/18/going-3d-with-tableau/
+5. https://dl.acm.org/citation.cfm?id=1279642
+6. https://dl.acm.org/citation.cfm?id=253708
+7. https://www.gdcvault.com/play/1024762/UX-in-Google-Earth-VR
