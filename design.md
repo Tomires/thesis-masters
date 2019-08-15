@@ -45,12 +45,42 @@ cyberplot.update(iris3, id = "09fee44cff6a79cdf2a6176b2ffb1008")
 
 ### Manager
 
-### Navigator
+Manager is the name for our web component. It is meant to be installed on a virtual private server (VPS) and provides storage for datasets as well as an interface for users to edit their datasets. In terms of architecture, it is the central part of our environment, as both plugins and Navigator interacts with its APIs.
 
 ![User interface of Manager.](images/manager.png)
+
+As it is a multi-user application, the user first has to create an account. After logging in, they are presented with a list of their datasets on a sidebar to the left. In the upper right corner of the screen, they can see their username and access a notification center, which is where they are able to answer sharing requests and, most importantly, access the VR headset management window. This window gives them information about headsets associated with their account, such as an identifier (name of HMD as well as domain name of computer as provided by host OS if available) and time of association.
+
+In the lower left corner is a button entitled *Add new dataset*. Pressing it opens up a wizard for adding a dataset. The same wizard with slight differences is also used when updating a dataset. In the first step, the user can select their data source. If they choose a programming environment, they receive instructions on how to use the plugin system.
+
 ![Options for adding a dataset.](images/manager_add.png)
+
+If they choose to create a dataset from local file, they are prompted to select a CSV file by either opening an OS-native file picker dialog or by dragging a file icon into their web browser. In the next step, they have to decide whether the first line of their file includes labels. After selecting an appropriate answer, the dataset is uploaded and appears in the sidebar. Attribute types are assigned automatically.
+
 ![Dataset addition wizard.](images/manager_labels.png)
+
+Clicking on a dataset in the sidebar brings up the dataset view, which contains select metadata (number of attributes, row count, last edit timestamp), buttons for accessing various functions and a listing of all the attributes. For each attribute, we can see its label, data type and a preview of its values. Clicking on an attribute brings up the attribute view that contains options to rename an attribute, change its data type (nominal, numerical, categorical, vector) and decide on which action to take in the case of missing values. In the case of numerical attributes, we are able to view select statistical information, such as quartiles, mean and standard deviation.
+
+If we return back to dataset-wide actions, we have the following options:
+* Update dataset
+* Manage dataset versions
+* Download dataset file
+* Share dataset with another user
+* Rename dataset
+* Delete dataset
+
+![Dataset actions. From left: Update, manage versions, download, share, rename, delete.](images/manager_actions.png)
+
+Sharing a dataset allows us to select a user with which to share. The next time they log in, they are presented with a notification that enables them to either accept or decline the share request. Should they accept, the dataset is copied onto their account.
+
+Datasets can be updated in the same way as they are created, that is using a local file or via the plugin system. The system checks for any type discrepancies and will refuse an upload of data incompatible with current attributes. By default, existing data is overwritten on update. However, we can choose to enable versioning in order to keep multiple copies of the same dataset, essentially adding a temporal dimension to our data. Examples of using this feature include a smart device for gathering data, which periodically uploads said data using the plugin system. Versions can be individually downloaded and deleted using the version management interface. Versioning can also be turned on or off on a per dataset basis.
+
 ![Version management in Manager.](images/manager_versions.png)
+
+### Navigator
+
+Our VR component is called Navigator.
+
 ![Navigator's 3DOF interface.](images/cyberplot_3dof.png)
 ![Navigator's 6DOF interface.](images/cyberplot_6dof.png)
 ![Left: Pairing prompt in Navigator. Right: Adding a new headset in Manager.](images/pairing.png)

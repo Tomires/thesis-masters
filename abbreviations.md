@@ -8,6 +8,7 @@
 | API | Application programming interface |
 | AR | Augumented reality |
 | BI | Business intelligence |
+| CSV | Comma-separated values |
 | FOSS | Free and open-source software |
 | HMD | Head-mounted display |
 | IPD | Interpupilary distance |
@@ -15,11 +16,13 @@
 | LAN | Local area network |
 | LINQ | Language Integrated Query |
 | ORM | Object-relational mapping |
+| OS | Operating system |
 | PCA | Principal component analysis |
 | SDK | Software development kit |
 | SPA | Single-page application |
 | SQL | Structured Query Language |
 | REST | Representational State Transfer |
 | UI | User interface |
+| VPS | Virtual private server |
 | VR | Virtual reality |
 | WIMP | Windows-Icons-Menus-Pointing |
