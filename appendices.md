@@ -23,9 +23,9 @@ The following are transcripts from videos that were created to explain the diffe
 
 ### Introduction
 
-Hello, and welcome to cyberplot, a fresh new way to look at your data. Cyberplot consists of three components - plugins, Manager and Navigator.
+Hello, and welcome to Cyberplot, a fresh new way to look at your data. Cyberplot consists of three components - plugins, Manager and Navigator.
 
-You can use plugins to integrate cyberplot into your programming environment of choice, such as Python or R. Using our API integrations is easy, just follow the instructions.
+You can use plugins to integrate Cyberplot into your programming environment of choice, such as Python or R. Using our API integrations is easy, just follow the instructions.
 
 Manager allows you to upload data straight from your computer. This is also where you can edit existing datasets and share them with others.
 
