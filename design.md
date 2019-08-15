@@ -79,10 +79,24 @@ Datasets can be updated in the same way as they are created, that is using a loc
 
 ### Navigator
 
-Our VR component is called Navigator.
+Our VR component is called Navigator. When the user first launches Navigator on their VR headset, they are presented with a 5-digit numeric code, which is used for pairing their account. This system was chosen in order to mitigate poor text input capabilities of virtual reality. Originally, we have planned on using an input solution inspired by a project called Punchkeyboard, however doing so would only work in 6DOF, requiring us to use a traditional keyboard interface in 3DOF.[2] Moreover, we wanted to avoid using text wherever possible as contemporary virtual reality HMDs are still lacking in resolution and text legibility is noticably impaired on OLED headsets due to their subpixel arrangement. As such, we try to make maximum use of visual elements.
 
-![Navigator's 3DOF interface.](images/cyberplot_3dof.png)
-![Navigator's 6DOF interface.](images/cyberplot_6dof.png)
 ![Left: Pairing prompt in Navigator. Right: Adding a new headset in Manager.](images/pairing.png)
 
+After logging in, the user can select one of their datasets, which is then loaded onto what we call a *data brush*, essentially a simplifed version of Manager's dataset view. In the 3DOF version, the databrush is present in a fixed position in front of user's pelvis and while its visibility can be toggled, it is visible for the most part. In the 6DOF version, the user can display the data brush by holding down the grip button. It is then displayed on top of one of their controllers. The data brush displays dataset metadata and attribute listings, which look similar to their Manager counterpart. In order to reduce the amount of text and provide more information, we have opted to display histograms in place of data preview for numerical attributes. User can move between pages of attributes by utilizing a flick gesture using their controller's analog stick or touchpad. They are also able to switch between versions if versioning is on for selected dataset and load additional datasets. The users are able to have multiple datasets open at the same time.
+
+![Navigator's 3DOF interface.](images/cyberplot_3dof.png)
+
+Plots can be created by pointing at the floor an holding the trigger, which opens up a pie menu with available plot types. Selection can be made by moving the pointer onto an icon and releasing the trigger. This interaction enables the user to quickly create a plot anywhere inside the virtual environment. Plots can be moved around the user's current position by using the trigger and brought closer and further away by using the analog stick or joystick in conjuction with the trigger. If the user drags the plot far away, it turns red and, should the user release the trigger, is deleted from the scene.
+
+Plots can also be rotate 90 degrees by pointing at them and using the aforementioned flick gesture. In 3DOF, we try to mitigate the lack of positional movement (which further enhances spatial perception) by offering a free-form rotation mode, which is triggered by pointing at the plot and pressing down on the touchpad. Doing so maps the rotation of a controller onto the rotation of the plot.
+
+The plot can also be scaled, although the mechanics differ depending on VR system used. In 6DOF, one can scale the plot by pointing at it with both controllers, pressing the trigger and dragging inwards or outwards, a fairly standard gesture in VR interface design. In 3DOF we are unable to do this, as most 3DOF systems come with only one controller. We have instead chosen to utilize a twisting motion, where the user twists their wrist in order to control plot's scale. Such interaction technique had been previously implemented in a VR game *Virtual Virtual Reality*.[3]
+
+![Navigator's 6DOF interface.](images/cyberplot_6dof.png)
+
+Attributes can be dragged from the data brush onto individual plots by using the trigger button. In the case of scatter plots, they can be assigned to spatial axes and non-spatial features like color and size. Once an attribute is assigned, it is color-coded on both the plot and the data brush. Color-coding persists until it is removed from all plots. Assignments can be reversed by using the trigger button. Plots also display scales. For numerical attributes we display numerical values for 7 steps, for categorical attributes, steps are made for each value. The user is able to slice the plot by creating bounds. These are created by pressing on a desired position on a scale.
+
 1. https://www.sciencedirect.com/science/article/pii/S0097849304000251
+2. https://uxdesign.cc/keyboard-input-for-virtual-reality-d551a29c53e9
+3. https://tenderclaws.com/vvr/
