@@ -19,3 +19,12 @@ Lastly, there should be integration support for popular programming languages th
 ### Manager
 
 ### Navigator
+
+![User interface of Manager.](images/manager.png)
+![Options for adding a dataset.](images/manager_add.png)
+![Dataset addition wizard.](images/manager_labels.png)
+![Version management in Manager.](images/manager_versions.png)
+![Navigator's 3DOF interface.](images/cyberplot_3dof.png)
+![Navigator's 6DOF interface.](images/cyberplot_6dof.png)
+![Left: Pairing prompt in Navigator. Right: Adding a new headset in Manager.](images/pairing.png)
+![Version management in Manager.](images/manager_python.png)
