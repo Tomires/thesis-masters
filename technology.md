@@ -18,19 +18,19 @@ SDK incompatibilities have long been a large issue in VR development, however th
 
 Since we use Unity, we have access to a large number of libraries written for .NET ecosystem. In our project we utilize a REST client[13] that allows us to effortlessly interface with Manager's APIs, as well as an adapted version of SQLite-net called SQLite4Unity3d.[14] SQLite, a file-based relational database based on SQL language, is used client-side to store dataset metadata.[15] The aforementioned library was chosen for its support of LINQ, a feature included in modern versions of .NET Framework that allows for easy querying of composite data types.[16]
 
-1. https://dl.acm.org/citation.cfm?id=932295
-2. https://palletsprojects.com/p/flask/
-3. https://www.numpy.org/
-4. https://pandas.pydata.org/
-5. https://www.sqlalchemy.org/
-6. https://www.mysql.com/
-7. https://vuejs.org/
-8. https://developer.oculus.com/documentation/unity/latest/concepts/book-unity-gsg/
-9. https://github.com/microsoft/MixedRealityToolkit-Unity/
-10. https://github.com/ValveSoftware/openvr/
-11. https://tbutt.net/
-12. https://www.khronos.org/news/press/khronos-releases-openxr-1.0-specification-establishing-a-foundation-for-the-ar-and-vr-ecosystem/
-13. https://github.com/proyecto26/RestClient/
-14. https://github.com/robertohuertasm/SQLite4Unity3d/
-15. https://www.sqlite.org/
-16. https://docs.microsoft.com/en-us/dotnet/standard/using-linq/
+1. (fielding) https://dl.acm.org/citation.cfm?id=932295
+2. (flask) https://palletsprojects.com/p/flask/
+3. (numpy) https://www.numpy.org/
+4. (pandas) https://pandas.pydata.org/
+5. (sqlalchemy) https://www.sqlalchemy.org/
+6. (mysql) https://www.mysql.com/
+7. (vuejs) https://vuejs.org/
+8. (oculusunity) https://developer.oculus.com/documentation/unity/latest/concepts/book-unity-gsg/
+9. (mrtk) https://github.com/microsoft/MixedRealityToolkit-Unity/
+10. (openvr) https://github.com/ValveSoftware/openvr/
+11. (tbutt) https://tbutt.net/
+12. (openxr) https://www.khronos.org/news/press/khronos-releases-openxr-1.0-specification-establishing-a-foundation-for-the-ar-and-vr-ecosystem/
+13. (restclient) https://github.com/proyecto26/RestClient/
+14. (sqliteunity) https://github.com/robertohuertasm/SQLite4Unity3d/
+15. (sqlite) https://www.sqlite.org/
+16. (linq) https://docs.microsoft.com/en-us/dotnet/standard/using-linq/

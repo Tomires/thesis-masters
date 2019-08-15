@@ -59,14 +59,14 @@ Unfortunately, due to the enterprise nature of analyzed products and lack of a c
 | Telepresence | Yes | Yes | Yes |
 | Consumer version | No | No | No |
 
-1. https://www.virtualitics.com/
-2. https://pypi.org/project/pyVIP/
-3. https://www.youtube.com/watch?v=p58Lysfv4FY
-4. https://looker.com/platform/blocks/embedded/lookvr/
-5. https://looker.com/demo/looker-dashboard/
-6. https://store.steampowered.com/app/595490/LookVR/
-7. https://www.oculus.com/experiences/rift/1251660221572429/
-8. https://3data.io/
-9. https://www.youtube.com/watch?v=9hd_YmYyGQk
-10. https://3data.io/poweroffice/
-11. https://webvr.info/
+1. (virtualitics) https://www.virtualitics.com/
+2. (pyvip) https://pypi.org/project/pyVIP/
+3. (virtualiticsvideo) https://www.youtube.com/watch?v=p58Lysfv4FY
+4. (lookvr) https://looker.com/platform/blocks/embedded/lookvr/
+5. (lookerdash) https://looker.com/demo/looker-dashboard/
+6. (lookvrsteam) https://store.steampowered.com/app/595490/LookVR/
+7. (datavizvroculus) https://www.oculus.com/experiences/rift/1251660221572429/
+8. (3data) https://3data.io/
+9. (3datavideo) https://www.youtube.com/watch?v=9hd_YmYyGQk
+10. (3datasuite) https://3data.io/poweroffice/
+11. (webvr) https://webvr.info/

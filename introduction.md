@@ -8,6 +8,6 @@ However, if we are to gain insight from such data, we have to find effective way
 
 As we will discuss in the following chapter, these pieces of software are not very user-friendly and are often unavailable for those outside of large corporations due to their reliance on underlying technology and also their business models. The hypothesis of our work is that we can make data visualization more accessible by utilizing novel interaction techniques, specifically spatial interfaces used in virtual reality (VR) applications. We will also discuss the implications of using such technology in the context of data visualization before moving on to look at current applications in the area. We will then go over the design of our application and technological challenges that we have encountered. The closing chapters include discussion on possible future additions and test design.
 
-1. https://news.sky.com/story/behind-the-scenes-at-donald-trumps-uk-digital-war-room-10626155
-2. https://www.ibmbigdatahub.com/infographic/four-vs-big-data
-3. https://cacm.acm.org/magazines/2011/8/114953-an-overview-of-business-intelligence-technology/fulltext
+1. (cambridge) https://news.sky.com/story/behind-the-scenes-at-donald-trumps-uk-digital-war-room-10626155/
+2. (bigdata) https://www.ibmbigdatahub.com/infographic/four-vs-big-data/
+3. (bi) https://cacm.acm.org/magazines/2011/8/114953-an-overview-of-business-intelligence-technology/fulltext/

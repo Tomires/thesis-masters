@@ -136,10 +136,10 @@ The full use of one's visual field as well as senses of touch (through force fee
 
 Furthermore, they have the ability to invite other users into their virtual space, which allows for multi-user interactions with plots inside the space.
 
-1. https://dl.acm.org/citation.cfm?doid=358886.358895
-2. https://www.paraview.org/
-3. https://www.tableau.com/
-4. https://boraberan.wordpress.com/2015/12/18/going-3d-with-tableau/
-5. https://dl.acm.org/citation.cfm?id=1279642
-6. https://dl.acm.org/citation.cfm?id=253708
-7. https://www.gdcvault.com/play/1024762/UX-in-Google-Earth-VR
+1. (klm) https://dl.acm.org/citation.cfm?doid=358886.358895
+2. (paraview) https://www.paraview.org/
+3. (tableau) https://www.tableau.com/
+4. (tableau3d) https://boraberan.wordpress.com/2015/12/18/going-3d-with-tableau/
+5. (ware) https://dl.acm.org/citation.cfm?id=1279642
+6. (wimp) https://dl.acm.org/citation.cfm?id=253708
+7. (earthux) https://www.gdcvault.com/play/1024762/UX-in-Google-Earth-VR/

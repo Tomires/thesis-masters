@@ -97,7 +97,7 @@ The plot can also be scaled, although the mechanics differ depending on the VR s
 
 Attributes can be dragged from the data brush onto individual plots by using the trigger button. In the case of scatter plots, they can be assigned to spatial axes and non-spatial features like color and size. When we assign an attribute onto spatial axes, the position of nodes is smoothly interpolated to their new position in order to provide a visual cue to the user. Nodes are depicted as sprites in order to increase performance on mobile hardware. Once an attribute is assigned, it is color-coded on both the plot and the data brush. Color-coding persists until it is removed from all plots. Assignments can be reversed by using the trigger button. Plots also display scales. For numerical attributes we display numerical values for a set number of steps, for categorical attributes, steps are made for each value. The user is able to slice the plot by creating bounds. These are created by pressing on a desired position on a scale.
 
-1. https://www.sciencedirect.com/science/article/pii/S0097849304000251
-2. https://github.com/cyberplot/
-3. https://uxdesign.cc/keyboard-input-for-virtual-reality-d551a29c53e9
-4. https://tenderclaws.com/vvr/
+1. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
+2. (github) https://github.com/cyberplot/
+3. (punchkeyboard) https://uxdesign.cc/keyboard-input-for-virtual-reality-d551a29c53e9/
+4. (vvr) https://tenderclaws.com/vvr/

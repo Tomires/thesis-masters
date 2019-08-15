@@ -55,4 +55,4 @@ You now know how to create plots and load datasets. The last thing you need to l
 
 Lastly, let's learn about versioning. Versioning allows you to keep multiple copies of a single dataset. After enabling versioning inside Cyberplot Manager, you can change between the versions straight from your data brush. And that covers the basics of Cyberplot Navigator. Have fun exploring your data.
 
-1. https://dl.acm.org/citation.cfm?doid=358886.358895
+1. (klm) https://dl.acm.org/citation.cfm?doid=358886.358895

@@ -36,6 +36,6 @@ It is necessary to implement a plot legend for all non-spatial dimensions. Such 
 
 In order to maximize the benefits of our immersive VR environment, we would like to introduce a so-called immersion mode, which would enable users to focus on a single plot while hiding the rest. Immersion mode would come with a brand new control set that would enable users to more effectively view the data. We would also be able to use this mode to render large plots in greater detail as all other plots would be hidden and thus would not use system resources.
 
-1. https://dl.acm.org/citation.cfm?id=3126613
-2. https://dl.acm.org/citation.cfm?id=949607.949633
-3. https://developer.oculus.com/documentation/avatarsdk/latest/concepts/
+1. (imaxes) https://dl.acm.org/citation.cfm?id=3126613
+2. (linking) https://dl.acm.org/citation.cfm?id=949607.949633
+3. (avatarsdk) https://developer.oculus.com/documentation/avatarsdk/latest/concepts/
