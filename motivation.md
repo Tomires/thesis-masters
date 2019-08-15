@@ -20,7 +20,7 @@ ParaView is an open-source application for data analysis and visualization.[2] I
 
 The user workflow is centered on so-called pipeline, which is presented to the user via a UI element called Pipeline browser. Here, the user can place actions, which then get applied incrementally, giving the user an option to jump back to a previous state in real time. Examples of actions include loading a file, creating a visualization of selected type and applying filters.
 
-![Result of our example workflow](images/paraview.png)
+![Result of our example workflow.](images/paraview.png)
 
 Other key parts of the user interface include a properties panel, which allows the user to modify parameters of a selected action in the pipeline and the work area where visualizations are drawn. The user is also able to display other panels, which contain further statistical information on loaded dataset. Of particular note is a Color Map panel, which enables the user to choose between various color spaces. 
 
@@ -28,7 +28,7 @@ There is also a Collaboration panel, which enables multiple users to connect to 
 
 We will start our usability test by opening our csv file. ParaView supports a countless amount of input formats. After loading the data, it is analyzed and data types are automatically assigned, the user can choose a delimiter character and specify whether the dataset in question includes headers. To finish the loading process, the user has to click the *Apply* button. After loading the dataset they are presented with a tabular view of it in its entirety.
 
-![Menu listing all available filters](images/paraview_menu.png)
+![Menu listing all available filters.](images/paraview_menu.png)
 
 Next, we need to create a scatter plot. This is done in a very convoluted fashion by first selecting the dataset action in the pipeline browser and then opening up a menu via *Filters -> Alphabetical*. This menu takes up the entirety of the screen and contains many seemingly unrelated actions. An obvious choice for the user would be to select the *Plot Data*  option, however they must instead select *Table to Points*.
 
@@ -78,7 +78,7 @@ The total time to complete our tasks is 75.74 seconds. Overall, ParaView seems l
 
 Tableau is a commonly used software for business intelligence. It allows the user to load data by opening a local file (csv, JSON, Excel spreadsheet) or connecting to a database (MSSQL, Oracle, MySQL, Amazon Redshift and more). The number of database integrations is much larger than the number of support types of local files indicative of the product's focus on enterprise and big data. The desktop application is available for Windows and macOS.[3]
 
-![Result of our example workflow](images/tableau_sheet.png)
+![Tableau's sheet view.](images/tableau_sheet.png)
 
 The company also offers a product called Tableau Server which enables the users to  modify their data online using either a publicly hosted service or an on-premises server.
 
@@ -86,7 +86,7 @@ The client software includes a very straightforward and easy to use interface. T
 
 Unfortunately, as of version 2019.2.2, Tableau does not have native support for three-dimensional plots. There is a workaround for creating pseudo-3D plots, but it requires the use of a SQL database and is not user-friendly at all, being more of a hack than a proper solution.[4]
 
-![Tableau's edit view](images/tableau_edit.png)
+![Tableau's edit view.](images/tableau_edit.png)
 
 The following table lists all KLM operations necessary to complete a simplified task of creating a two-dimensional scatter plot.
 

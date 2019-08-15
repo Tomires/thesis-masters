@@ -8,7 +8,7 @@ So far, we have focused on scatter plots as a means to visualize our data. As pa
 
 Additionally, when it comes to multivariate data, we would like to add support for visualizing geospatial data on either a plane or a globe, complete with satellite imagery, as well as support for parallel coordinate plots inspired by the techniques discussed in a related paper.[1]
 
-![Clockwise from top left: surface plot, bar plot (globe), parallel coordinates plot, bar plot (planar)](images/plot_types.png)
+![Clockwise from top left: surface plot, bar plot (globe), parallel coordinates plot, bar plot (planar).](images/plot_types.png)
 
 ## Brushing, linking
 
@@ -30,7 +30,7 @@ In addition, it would be advantageous to introduce asynchronicity to the synchro
 
 It is necessary to implement a plot legend for all non-spatial dimensions. Such UI element needs to be easily accessible, yet unobtrusive. As such we plan to position the element on a user's hand with the capability to show and hide it using a simple wrist twisting gesture akin to looking at a wristwatch.
 
-![Sketch of a legend feature. The user points at a plot (1) with one hand and twists the wrist of their other hand (2) to reveal details on all non-spatial features of the plot.](images/legend.png)
+![Sketch of the legend feature. The user points at a plot (1) with one hand and twists the wrist of their other hand (2) to reveal details on all non-spatial features of the plot.](images/legend.png)
 
 ## Immersion mode
 
