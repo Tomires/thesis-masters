@@ -8,7 +8,7 @@ The goal of our research is to create a virtual reality visualization environmen
 
 ## Feature selection
 
-We have selected a number of features to implement for our first prototype, which was made in the space of 4 months (one academic semester). These include the ability to load comma-delimited csv files into the environment, ability to update existing datasets by either overwriting the existing copy or appending a new copy (*versioning*), letting the user perform basic editing operations such as renaming dataset attributes, setting their data type and missing value setting and a basic dataset sharing feature.
+We have selected a number of features to implement for our first prototype, which was made in the space of 4 months (one academic semester). These include the ability to load comma-delimited CSV files into the environment, ability to update existing datasets by either overwriting the existing copy or appending a new copy (*versioning*), letting the user perform basic editing operations such as renaming dataset attributes, setting their data type and missing value setting and a basic dataset sharing feature.
 
 The user should also be able to create scatter plots, position them freely around the virtual environment, adjust their rotation and scale, specify bounds for each spatial axis (*slicing*), assign dataset attributes onto spatial axes and non-spatial features such as color and size and view basic dataset metadata and statistics of attributes contained within said dataset.
 
@@ -16,7 +16,7 @@ Lastly, there should be integration support for popular programming languages th
 
 ## Component design
 
-We have decided to divide our environment into three distinct components - plugins, Manager and Navigator. Plugins are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. Manager enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. Navigator allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components:
+We have decided to divide our environment into three distinct components - plugins, Manager and Navigator. Plugins are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. Manager enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. Navigator allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
 
 ![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[1]
 

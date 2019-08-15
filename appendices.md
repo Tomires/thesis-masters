@@ -11,7 +11,7 @@
 | B[c] | Clicking a mouse button. | 0.2 |
 Excerpt of used operators.[1]
 
-a. Non-secretary typist average (40 words per minute)
+a. Non-secretary typist average (40 words per minute).
 
 b. Average. Varies with distance and target size according to Fitts's Law: t_p = 0.8 + 0.1 * log2(d / s + 0.5) s
 

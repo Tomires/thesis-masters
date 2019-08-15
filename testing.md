@@ -20,7 +20,7 @@ The following table lists all KLM operations necessary to complete the task of c
 | B | Display the data brush by holding the grip button  | 0.2[a] |
 | PB | Point on a dataset and press the trigger | 1.3 |
 | B | Hide the data brush by releasing the grip button | 0.2[a] |
-| PBPB | Point on the ground and while holding the trigger select the scatter plot icon, then release the trigger | 2.6 |
+| PBPB | Point on the ground, hold trigger, select scatter plot icon, release the trigger | 2.6 |
 | B | Display the data brush by holding the grip button | 0.2[a] |
 | M | Locate the data brush | 1.35[b] |
 | 2*(PBPB) | Drag attributes onto two of the spatial dimensions | 5.2 |

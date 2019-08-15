@@ -34,7 +34,7 @@ When it comes to LookVR's feature set, it is rather basic. The amount of availab
 
 # 3Data
 
-Austin-based project 3Data started as a 2016 prototype called DataVizVR.[7] As of August 2019, this demo is still available via Oculus Store.[8] The demo features a number of preloaded datasets and enables the user to interact with a single plot via a very spartan user interface. Since then, the product has matured, offering various plot types including terrain maps.
+Austin-based project 3Data started as a 2016 prototype called DataVizVR.[7] As of August 2019, this demo is still available via Oculus Store. The demo features a number of preloaded datasets and enables the user to interact with a single plot via a very spartan user interface. Since then, the product has matured, offering various plot types including terrain maps.[8]
 
 ![3Data's immersive VR environment.](images/3data.png)[9]
 

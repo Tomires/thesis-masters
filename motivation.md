@@ -8,11 +8,11 @@ This subsection introduces two applications that we have chosen and goes over th
 
 ### Example task list
 
-1. Load Wine dataset from a csv file
-2. Create a scatter plot
-3. Assign attributes on spatial axes
-4. Map attribute to color
-5. Slice one of the spatial axes
+1. Load Wine dataset from a csv file.
+2. Create a scatter plot.
+3. Assign attributes onto spatial axes.
+4. Map attribute to color.
+5. Slice one of the spatial axes.
 
 ### ParaView
 
