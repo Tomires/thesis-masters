@@ -15,6 +15,7 @@
 | KLM | Keystroke-level model |
 | LAN | Local area network |
 | LINQ | Language Integrated Query |
+| OLED | Organic light-emitting diode |
 | ORM | Object-relational mapping |
 | OS | Operating system |
 | PCA | Principal component analysis |
