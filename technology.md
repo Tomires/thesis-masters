@@ -6,7 +6,7 @@ All user data is stored in Manager and is exposed to Navigator using a set of ap
 
 ## Manager
 
-Manager consists of a back end written in Flask, a lightweight web application framework for Python.[2] We make use of a number of Python packages, most notably Numpy[3] and Pandas[4], which allow us to extract statistical information from uploaded datasets, and SQLAlchemy, an object-relational mapper (ORM) that enables developers to easily create and manage database schemas directly in Python.[5] In production, we make use of MySQL database system.[6] Front end is written in Vue.js, a JavaScript framework designed for building reactive single-page applications (SPA).[7]
+Manager consists of a back end written in Flask, a lightweight web application framework for Python.[2] We make use of a number of Python packages, most notably Numpy[3] and Pandas[4], which allow us to extract statistical information from uploaded datasets, and SQLAlchemy, an object-relational mapper (ORM) that enables developers to easily create and manage database schemas directly in Python.[5] In production, we make use of the MySQL database system.[6] Front end is written in Vue.js, a JavaScript framework designed for building reactive single-page applications (SPA).[7]
 
 ## Navigator
 
@@ -16,7 +16,7 @@ In order to support multiple head-mounted units (HMD), we have to target a numbe
 
 SDK incompatibilities have long been a large issue in VR development, however the release of version 1.0 of Khronos Group's OpenXR at SIGGRAPH 2019 conference held in July 2019 signifies a leap in this area by offering standardized APIs for all HMDs. The specification is supported by all major VR/AR HMD vendors, as well as other stakeholders in the technology space.[12]
 
-Since we use Unity, we have access to a large number of libraries written for .NET ecosystem. In our project we utilize a REST client[13] that allows us to effortlessly interface with Manager's APIs, as well as an adapted version of SQLite-net called SQLite4Unity3d.[14] SQLite, a file-based relational database based on SQL language, is used client-side to store dataset metadata.[15] The aforementioned library was chosen for its support of LINQ, a feature included in modern versions of .NET Framework that allows for easy querying of composite data types.[16]
+Since we use Unity, we have access to a large number of libraries written for the .NET ecosystem. In our project we utilize a REST client[13] that allows us to effortlessly interface with Manager's APIs, as well as an adapted version of SQLite-net called SQLite4Unity3d.[14] SQLite, a file-based relational database based on SQL language, is used client-side to store dataset metadata.[15] The aforementioned library was chosen for its support of LINQ, a feature included in modern versions of .NET Framework that allows for easy querying of composite data types.[16]
 
 1. (fielding) https://dl.acm.org/citation.cfm?id=932295
 2. (flask) https://palletsprojects.com/p/flask/
