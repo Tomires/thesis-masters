@@ -40,7 +40,7 @@ As points are very small when we zoom in the plot, we set *Point Size* to a larg
 
 The next step is to slice the data by using the clip filter. We add the filter using *Filters -> Alphabetical -> Clip*. It is appended to the end of our pipeline, however we need to copy the transform values to the new filter. Finally, we select the desired cutting plane using *X/Y/Z Normal* buttons and drag the plane to a position that we would like. In order to view original axes, we select the result of *Table to Points* filter in our pipeline.
 
-The following table lists all KLM operations necessary to complete our task.
+The following table lists all KLM operations necessary to complete our task. The total time to complete our tasks is 75.74 seconds. Overall, ParaView seems like a powerful tool, albeit with a very convoluted user interface. The tool's tutorial guide contains 159 pages, although it covers advanced functionality in its later chapters.
 
 | Operator | Description | Time (s) |
 |---|---|---|
@@ -71,8 +71,6 @@ The following table lists all KLM operations necessary to complete our task.
 | PBPB | Drag the cutting plane to desired position | 2.6 |
 | PB | Click on *Apply* | 1.3 |
 | PB | Select original filter to display its axes | 1.3 |
-
-The total time to complete our tasks is 75.74 seconds. Overall, ParaView seems like a powerful tool, albeit with a very convoluted user interface. The tool's tutorial guide contains 159 pages, although it covers advanced functionality in its later chapters.
 
 ### Tableau
 
@@ -112,7 +110,7 @@ The following table lists all KLM operations necessary to complete a simplified 
 
 The total time to complete our tasks is 40.94 seconds, half the time of a similar workflow in ParaView. However, we have only been able to create a two-dimensional scatter plot due to software's limitations.
 
-## Benefits of VR
+## Benefits of virtual reality
 
 We believe that virtual reality has the potential to enhance the visualization experience. Let us explore several reasons why.
 
