@@ -17,6 +17,24 @@ b. Average. Varies with distance and target size according to Fitts's Law: t_p =
 
 c. Not present as a separate action in the original paper. Instead it is included as part of the homing motion.
 
+## Test reports
+
+In addition to questionnaires, we made use of automated user testing environments to help analyze user behaviour within our application. In addition to times measured for each task, generated test reports include a listing of actions conducted by the user complete with timestamps. These include the following:
+
+- Opening up a dataset.
+- Spawning a plot of a certain type.
+- Assignment of attribute onto an axis.
+- Deassignment of an attribute from a plot axis.
+- Modification of attribute range.
+- Flick-based plot rotation.
+- Entering/leaving immersive mode.
+- Accessing databrush panel.
+- Accessing swatch (statistics) panel inside immersive mode.
+- Change of plot scale.
+- Change of plot scale in immersive mode.
+- Movement in immersive mode.
+- Plot deletion.
+
 ## Installation guide
 
 In this section we will go over the setup procedures for each component provided with this thesis.
