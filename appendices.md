@@ -17,6 +17,28 @@ b. Average. Varies with distance and target size according to Fitts's Law: t_p =
 
 c. Not present as a separate action in the original paper. Instead it is included as part of the homing motion.
 
+## Installation guide
+
+In this section we will go over the setup procedures for each component provided with this thesis.
+
+### Navigator
+
+Navigator, the VR component of our application, is provided as a collection of binary files. PC binaries require a computer running the latest version of Microsoft Windows 10 with Oculus software installed. Supported headsets include Oculus Rift and Oculus Rift S. To launch Navigator, open the exe file in a respective directory. Android binaries require Oculus Go or Oculus Quest standalone headsets with developer mode enabled.[2] They can be sideloaded using Android Debug Bridge and accessed from the Library interface under Unknown Sources.
+
+### Manager
+
+Manager, the web component of our application, is provided in form of source code bundled with an installation script. Functionality has been tested on a clean install of Ubuntu 18.04 LTS. To begin setup, navigate inside the folder and run the provided script as superuser by using the following commands:
+```
+chmod u+x install.sh
+sudo ./install.sh
+```
+
+Follow on-screen prompts and then wait for the installation to finish. Manager instance should then be accessible using a standard web browser.
+
+## Plugins
+
+Included are sample integrations for Python and R. Before use, please modify the *DEFAULT_URL* variable or specify the *serverUrl* argument when calling any of the functions. It should point to an IP address or a hostname of a machine running an instance of Manager.
+
 ## Video transcripts
 
 The following are transcripts from videos that were created to explain the different parts of our application and also the user interface and controls of our virtual reality component in 3DOF and 6DOF versions.
@@ -56,3 +78,4 @@ You now know how to create plots and load datasets. The last thing you need to l
 Lastly, let's learn about versioning. Versioning allows you to keep multiple copies of a single dataset. After enabling versioning inside Cyberplot Manager, you can change between the versions straight from your data brush. And that covers the basics of Cyberplot Navigator. Have fun exploring your data.
 
 1. (klm) https://dl.acm.org/citation.cfm?doid=358886.358895
+2. (godevmode) https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-device-setup-go/
