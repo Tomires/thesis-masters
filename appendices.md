@@ -37,7 +37,7 @@ In addition to questionnaires, we made use of automated user testing environment
 
 ## Installation guide
 
-In this section we will go over the setup procedures for each component provided with this thesis.
+In this section we will go over the setup procedures for components provided with this thesis. It is important to note that there are multiple builds available for each component - 1901 (January), 1908 (August) and 1912 (December). Intercompatibility of components from different builds is not guaranteed (i.e. the August build of Navigator may not be compatible with the December build of Manager).
 
 ### Navigator
 
@@ -52,6 +52,7 @@ By default, Navigator tries to connect to the public instance of Manager located
 ### Manager
 
 Manager, the web component of our application, is provided in form of source code bundled with an installation script. Functionality has been tested on a clean install of Ubuntu 18.04 LTS. To begin setup, navigate inside the folder and run the provided script as superuser by using the following commands:
+
 ```
 chmod u+x install.sh
 sudo ./install.sh
