@@ -97,19 +97,40 @@ When adding a new dataset, the application should be able to predict certain fea
 
 ## Feature selection
 
-**REVISE**
+In this section, we will set the scope of our application by selecting features to meet aforementioned design goals and use cases. The user should be load industry-standard comma-delimited (CSV) files into the environment. Two data structures are to be supported - *multivariate datasets*, which contain multiple attributes arranged in columns and two-dimensional arrays of numerical values, which will be further referred to as *matrix datasets*. Multivariate datasets may or may not include attribute labels. If they are present, they should be presented as a comma-delimited list on the first row of the file as per the example below.
 
-We have selected a number of features to implement for our first prototype, which was made in the space of 4 months (one academic semester). These include the ability to load comma-delimited CSV files into the environment, ability to update existing datasets by either overwriting the existing copy or appending a new copy (*versioning*), letting the user perform basic editing operations such as renaming dataset attributes, setting their data type and missing value setting and a basic dataset sharing feature.
+```
+Sepal length,Sepal width,Petal length,Petal width,Species 
+5.1,3.5,1.4,0.2,Iris-setosa
+5.6,3.0,4.1,1.3,Iris-versicolor
+6.3,3.3,6.0,2.5,Iris-virginica
+```
 
-The user should also be able to create various types of plots, position them freely around the virtual environment, adjust their rotation and scale, specify bounds for each spatial axis (*slicing*), assign dataset attributes onto spatial axes and non-spatial features such as color and size and view basic dataset metadata and statistics of attributes contained within said dataset.
+```
+0.3,0.4,0.6,0.4,0.3
+0.4,0.5,0.7,0.5,0.4
+0.6,0.4,0.5,0.4,0.6
+0.4,0.5,0.7,0.5,0.4
+0.3,0.4,0.6,0.4,0.3
+```
+
+When loading a new dataset into our application, the data type of each attribute should be automatically determined and presented to the user along with an option to change to another type that suits the provided data. In addition, the user should be presented with basic statistical data and data preview, so that they can make an informed decision regarding the data type of each attribute. The specifics of each attribute type are discussed later in this section. Users should also be able to change label of each attribute and decide on how to fill in missing values.
+
+The user should be able to load a new version of the dataset, provided the data structure meets dataset specifications. They are to be given an option to replace existing data or add a new *version*. In the latter case, the user will have the ability to change between versions when visualizing data from said dataset.
+
+When in VR, the user will be able to choose between five types of plots discussed below, position them freely around the virtual environment, adjust their rotation and scale, assign dataset attributes onto features of the plot, specify bounds for each spatial axis (*slicing*) and view basic dataset metadata and statistics of attributes contained within said dataset.
+
+Collaboration features should include the ability to share datasets with another user directly within the environment and also the ability to invite said user to a shared virtual environment with users represented as articulated virtual avatars that are capable of moving in space and voice communication.
 
 Lastly, there should be integration support for popular programming languages that allows programmers to create or update datasets from their programming environment of choice. Since we cannot cater to all, we should provide the ability for outside developers to build their own integrations for other programming languages or environments.
 
 ### Plot types
 
-**XX**
+**EXPAND**
 
 ### Attribute types
+
+**EXPAND**
 
 ## Component design
 
@@ -123,5 +144,9 @@ We have decided to divide our environment into three distinct components - plugi
 
 The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are infinitely more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without delving into code.
 
+**EXPAND**
+[3]
+
 1. (hta) https://www.uxmatters.com/mt/archives/2010/02/hierarchical-task-analysis.php
 2. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
+3. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
