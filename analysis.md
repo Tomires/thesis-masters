@@ -8,7 +8,7 @@ Our application should provide an intuitive way to view data in a virtual realit
 
 ## Target platform
 
-In order to specify a baseline for our application, we first need to look at the current landscape of virtual reality hardware. Over the years, we have primarily been dividing virtual reality systems into two main categories - phone- and PC-based VR. The former category includes ecosystems like Google Cardboard[1] and Daydream[2] and Samsung's GearVR[3], while the later includes three primary vendors - Oculus with its Rift headset[4], Microsoft's Windows Mixed Reality[5] ecosystem composed of head-mounted displays (HMDs) made by third-party manufacturers and Valve's SteamVR[6], which includes support for pretty much any PC-based headset.
+In order to specify a baseline for our application, we first need to look at the current landscape of virtual reality hardware. Over the years, we have primarily been dividing virtual reality systems into two main categories - phone- and PC-based VR. The former category includes ecosystems like Google Cardboard[1] and Daydream[2] and Samsung's GearVR[3], while the latter includes three primary vendors - Oculus with its Rift headset[4], Microsoft's Windows Mixed Reality[5] ecosystem composed of head-mounted displays (HMDs) made by third-party manufacturers and Valve's SteamVR[6], which includes support for pretty much any PC-based headset.
 
 ![Examples of various contemporary virtual reality systems. Clockwise from top: Google Daydream View (mobile), HTC Vive (PC), Oculus Quest (standalone), Google Cardboard (mobile)](images/hmd_examples.png)
 
