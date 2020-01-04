@@ -126,11 +126,52 @@ Lastly, there should be integration support for popular programming languages th
 
 ### Plot types
 
-**EXPAND**
+In order to satisfy the non-specificity design goal, we have to offer the user with a number of plot options. **XX**
+
+#### Scatter plot
+
+#### Globe plot
+
+#### Map plot
+
+#### Surface plot
+
+#### Box plot
 
 ### Attribute types
 
-**EXPAND**
+This subsection lists attribute types to be supported by our application. As mentioned earlier, an attribute type is automatically assigned when loading a new dataset. The user is then given the ability to change to any other type provided the attribute in question meets the type's requirements. Flow of the auto-assignment process is detailed by the following decision tree.
+
+![Decision tree for automatic assignment of attribute types in multivariate datasets.](images/attribute_assignment.pdf)
+
+#### Nominal
+
+Nominal attributes do not have any special requirements. Attributes default to this type should they fail all other assignment checks.
+
+#### Numerical
+
+Numerical attributes represent numbers in both decimal and integer formats. Decimal point is to be represented by a dot. The type is automatically assigned if all of attribute's values are numeric and do not satisfy conditions set for the locational type.
+
+#### Categorical
+
+Categorical attributes do not have any special requirements. The type is automatically assigned if the attribute in question has less than 10 unique values, where 10 is an arbitrary number chosen by the author.
+
+#### Vector
+
+Vector type is designed for storing three-dimensional vectors. The accepted format is specified as three numerical values separated by spaces. If all values of a specific attribute adhere to this convention, the type is automatically assigned.
+
+#### Locational
+
+Locational type is a subset of the numerical type representing geospatial coordinates. Decimal values between -180 and 180 are permitted. The full range is used to represent longitude, while a reduced range from -90 to 90 represents latitude. Attribute is automatically determined to be spatial if it meets the requirements and is labeled as one of the following (case-insensitive):
+
+- latitude
+- longitude
+- lat
+- lon
+
+#### Spatial
+
+Spatial type is exclusive to matrix datasets, where it represents the sole "attribute" containing all data. It is automatically assigned and cannot be changed by the user. As it only supports numerical data, datasets that do not satisfy this condition will be treated as multivariate instead.
 
 ## Component design
 
