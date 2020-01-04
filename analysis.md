@@ -85,42 +85,6 @@ Unfortunately, due to the enterprise nature of analyzed products and lack of a c
 | Telepresence | Yes | Yes | Yes |
 | Consumer version | No | No | No |
 
-## Design goals
-
-Let us specify key design goals for our application.
-
-### Inclusivity
-
-The application should be accessible to users without any prior experience with data analysis. Workflows that are expected to be utilized by the vast majority of users should be straightforward. More advanced functionality can be available for experienced users, but its presence should not deter newcomers from using the product.
-
-### Extensibility
-
-The application has to be extensible to a certain degree as to give stakeholders the ability to integrate it with their existing software stack.
-
-### Data security
-
-Users are not to be held hostage inside the application's ecosystem (*vendor lock*). All data should be retrievable with ease by the user and a system administrator where applicable. There should be an option to store data locally without a requirement to connect to outside servers.
-
-### Collaboration
-
-The application should facilitate collaboration between multiple users. They should be able to share data with one another without being forced to resort to external tools. In an optimal scenario, they should have the ability to communicate and interact with one another inside the virtual environment.
-
-### Non-specificity
-
-Use cases of our application should not be limited to a select field or domain of data.
-
-### VR
-
-The application's user interface should be tailor-made for virtual reality. It is to be designed around a spatial environment while mitigating all shortcomings of present-day virtual reality technology.
-
-### Availability
-
-The application is to be available on all major virtual reality platforms across PC, mobile and standalone categories. The user should be able to retain a persistent copy of their data across all devices as they may for instance use a workstation at their workplace and a standalone system at home.
-
-### Automatization
-
-When adding a new dataset, the application should be able to predict certain features, such as attribute type or structure of an uploaded dataset. The user should only be prompted if there is a high degree of uncertainity. In the inverse case, we will choose the most likely settings and allow the user to make modifications later at their leisure.
-
 1. (cardboard) https://arvr.google.com/cardboard/
 2. (daydream) https://arvr.google.com/daydream/
 3. (gearvr) https://www.oculus.com/gear-vr/
