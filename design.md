@@ -1,10 +1,34 @@
 # Design
 
-In this chapter we discuss the structure of our application suite, introduce some key features and go over certain technical and design challenges we had to overcome.
+In this chapter we discuss **X**
+
+## Personas
+
+The following personas characterize potential users of our application.
+
+### Novice
+
+![](images/persona_frank.jpg)
+
+Frank is a hobbyist. He is capable of performing basic computer operations, such as browsing the Internet or using an office suite. Lately, he came across an interesting dataset that highlights population growth in different areas of the world over the past couple centuries. Frank is quite impatient when it comes to computers and gets easily frustrated with complex pieces of software. As such, he is looking for a tool that will enable him to view this data without too much hassle.
+
+### Power user
+
+![](images/persona_quinn.jpg)
+
+Quinn is a senior data analyst working in meteorological agency. She possesses advanced programming skills and her current task is to build a networked swarm of drones that gather meteorological data from locations around her neighbourhood. She wants to remotely access the measured data and share measurements from particular days with her colleagues.
+
+### IT administrator
+
+![](images/persona_paul.jpg)
+
+Paul works as an IT technician at a corporate bank. He has been tasked by the company to find and recommend an immersive analytics platform to be used by its employees. Paul wants the software to store data locally in order to achieve compliance with new data regulations, integrate easily with existing processes inside the company and have the ability to audit the software. Although he is an experienced administrator with many years under his belt, he always enjoys software that is hassle-free to run and easy to set up.
 
 ## Goal
 
 The goal of our research is to create a virtual reality visualization environment that is accessible to everyone, is easily extensible by outside developers and works on 3DOF and 6DOF HMDs, no matter whether they are connected to a personal computer or standalone. Different control styles should be taken into account when designing interactions.
+
+![Hiearchical Task Analysis.](images/hta.pdf)[1]
 
 ## Feature selection
 
