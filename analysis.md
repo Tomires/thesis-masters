@@ -115,7 +115,11 @@ The application's user interface should be tailor-made for virtual reality. It i
 
 ### Availability
 
-The application is to be available on all major virtual reality platforms across PC, mobile and standalone categories.
+The application is to be available on all major virtual reality platforms across PC, mobile and standalone categories. The user should be able to retain a persistent copy of their data across all devices as they may for instance use a workstation at their workplace and a standalone system at home.
+
+### Automatization
+
+When adding a new dataset, the application should be able to predict certain features, such as attribute type or structure of an uploaded dataset. The user should only be prompted if there is a high degree of uncertainity. In the inverse case, we will choose the most likely settings and allow the user to make modifications later at their leisure.
 
 1. (cardboard) https://arvr.google.com/cardboard/
 2. (daydream) https://arvr.google.com/daydream/
