@@ -41,7 +41,7 @@ In addition to smaller user feedback sessions that took place over the entire co
 
 ### August test
 
-This round of testing took place at Tohoku University in Sendai, Japan with three participants taking part. Testing sessions were designed to take approximately 45 minutes of time, however the typical length of each session was closer to one hour. The schedule was as follows:
+This round of testing took place at Tohoku University in Sendai, Japan with four participants taking part. Testing sessions were designed to take approximately 45 minutes of time, however the typical length of each session was closer to one hour. The schedule was as follows:
 
 1. Questionnaire - section on previous experience.
 2. Introduction to data visualization.
@@ -67,7 +67,7 @@ We began by asking the participants a series of questions about their background
 
 Afterward completing the first part of our questionnaire, the users were shown two pieces of traditional visualization software - ParaView and Tableau. They were instructed to load a multivariate dataset from file, look up basic statistical information of each attribute, rename an attribute label, create a scatter plot, assign attributes onto spatial axes and color feature of the plot and lastly, to change the range of values shown on spatial axes. Second part of the questionnaire followed:
 
-- I felt ParaView was easy to use. (1-5)
+- I felt ParaView was easy to use. (1-5, where 5 denotes full agreement)
 - I felt Tableau was easy to use. (1-5)
 
 After answering the two questions, the participants were shown a video introducing them to our application. They were then instructed to launch Manager, create a user account, add a dataset, change attribute type, rename an attribute label, share a dataset with another user, accept an incoming share request and associate a fresh copy of Navigator with their account. A short demo of our plugin system had the participants load a dataset from R Studio.
@@ -77,10 +77,10 @@ Brief demos of 3DOF and 6DOF versions of Navigator were then given, each precede
 A timed test was then administered with participants being given the following tasks:
 
 1. Load dataset "Iris".
-2. Create a box plot.
+2. Create a bar plot.
 3. Move plot to desired position.
 4. Move plot to desired position and scale it appropriately.
-5. Delete the box plot.
+5. Delete the bar plot.
 6. Create a scatter plot.
 7. Move plot to desired position.
 8. Move plot to desired position and scale it appropriately.
@@ -131,12 +131,82 @@ Testing concluded with a standardized Simulator Sickness Questionnaire (SSQ).[1]
 
 #### Findings
 
-**TODO**
+One participant out of four did not have any prior experience with virtual reality. ParaView was universally regarded as being hard to use with Tableau being rated 4/5 on average. Out of all interactions, changing slice boundaries was the most problematic, with an average rating of 3/5 on the easiness scale. Timestamps in test reports confirm this fact. There was a large variance in the question regarding the simplicity of our plugin system - participants with no prior programming experience have both given a rating of 2/5. 
+
+When conducting demonstrations of Navigator, participants often had trouble recalling interactions shown in the tutorial video, one participant mentioned this fact in the questionnaire, adding that the videos could be faster. Another participant voiced their frustration with assigning attributes onto non-spatial features of a scatter plot. Exact plot positioning in the timed test also proved challenging, especially when using the analog stick of an Oculus Rift controller.
+
+Overall interest in plots was as follows (1 - most interested):
+
+1. globe plot
+2. map plot
+3. bar plot
+4. surface plot
+5. parallel coordinate plot
+
+Participants experienced at worst mild symptoms of motion sickness (with a 50% incidence among those susceptible to motion sickness in VR as per question #2).
 
 ### December test
 
-**ADD DECEMBER BUILD TEST**
-leading questions modified
-**BUGS DISCOVERED**
+This round of testing took place at Czech Technical University in Prague. Seven participants took part. Based on the experience from our August test, we have redesigned the test schedule in order to reduce the time required for each session. Nevertheless, test sessions took slightly over one hour on average. Hardware-wise, the demo of Virtualitics was conducted on HTC Vive, while Navigator was showcased on Oculus Quest. The schedule was as follows:
+
+1. Questionnaire - section on previous experience.
+2. Introduction to data visualization.
+3. Showcase of Tableau.
+4. Showcase of Virtualitics.
+5. Questionnaire - section on traditional tools.
+6. Introduction to Cyberplot.
+7. Demo of Manager and plugins.
+8. Demo of Navigator on Oculus Rift (6DOF).
+9. Timed tests incorporating all components.
+10. Questionnaire - Cyberplot-specific section.
+
+We have been able to acquire an evaluation version of Virtualitics immersive analytics software, which replaced ParaView in our testing schedule. Demonstration of the 3DOF version of Navigator has been omitted due to time constraints.
+
+The first part of our questionnaire was left intact, while the second part substituted ParaView for Virtualitics and now reads as follows:
+
+- Rank ease of use of Tableau. (1-5, where 5 means easy to use)
+- Rank ease of use of Virtualitics.
+
+The third part has been updated with newly added features and rephrased as to reduce any possible bias, which the author felt were present in the first version of the questionnaire. Participants were asked to rank their satisfaction with the following:
+
+- Ease of use compared to 2D visualization tools (ex. Tableau)
+- Ease of use compared to immersive analytics tools (ex. Virtualitics)
+- Intuitiveness of plot positioning in 3D space
+- Added benefit in perception of data using cyberplot compared to traditional 2D tools
+- Ease of loading new datasets from a local file (Manager)
+- Ease of modifying uploaded datasets (Manager)
+- Legibility of text on scales
+- Ease of changing slice boundaries
+- Navigation inside immersive mode
+- Quality of information provided by statistics panel in immersive mode
+- Spatial (three-dimensional) feel of plots
+- Clarity of iconography, visual design
+- Ease of assigning attributes from a data set onto a plot
+- Overall ease of use (Navigator)
+- Ease of use of the plugin system (Python/R)
+
+An open-ended question then followed with the same phrasing as in the original version of the questionnaire. Afterwards, participants were asked to order plots that have been recently implemented by the level of their interest. A new section has been added, in which participants have to provide a textual description for icons present around the interface. Testing once again concluded with the standardized Simulator Sickness Questionnaire.
+
+#### Findings
+
+This time all of our seven participants have had at least some experience with virtual reality. One of our participants answered that they often suffer from motion sickness in VR, although according to their SSQ results, they did not feel any moderate or severe discomfort, whereas another participant, who does not typically suffer from motion sickness, noted that they suffered from moderate fatigue and blurred vision after using our application. Most of our test participants had at least some experience with programming. There was again correlation between programming experience and perceived ease of use of our plugin system.
+
+The average rating of Tableau was 3.3/5, whereas Virtualitics fared worse at 2.6/5. For comparison, Navigator received a score of 4/5. We partially attribute the suboptimal rating for Virtualitics to the fact that we have used HTC Vive during its demonstration. The reduced comfort of its controller in comparison with Oculus Touch may have resulted in a slight negative bias. One particular point of discomfort with Virtualitics's UI was the lack of clarity in regards to mapping geospatial attributes onto a globe plot, since the software lists spatial axes as X, Y and Z independently on plot type. Navigator's *latitude*, *longitude* and *value* feature descriptions were universally praised in comparison.
+
+Opinion on the ease of use of Navigator in comparison to Tableau were mixed with two participants preferring the more traditional WIMP interface. However, most participants see the added benefit in using immersive tools. The weakest area of Navigator seems to be the newly added immersive mode with navigation inside immersion mode ranked at 2.9/5. Complaints include the lack of ability to rotate the plot without exiting immersive mode and a suboptimal speed of movement, although none of the participants complained about sickness when positioning a plot in immersive mode, no doubt helped by the addition of the static grid that fills the environment when doing so.
+
+Overall interest in plots was as follows (1 - most interested):
+
+1. globe plot
+2. map plot
+3. scatter plot
+4. surface plot
+5. bar plot
+
+We can see that the interest in the 3D bar plot fell considerably compared to the first round of testing. One of the participants righfully complained about occlusion present in this particular plot type. We think that adding the ability to slice bar plots could mitigate some of their faults. Globe and map plots were once again voted as the most interesting plot types by participants.
+
+When it comes to iconography, the participants were able to associate most icons with their correct meaning, however there were some outliers. The value icon (three vertical bars) was only recognized in one instance, the arrow sign for vector also proved challenging and will have to be redesigned. Categorical attributes were mostly referred to as *shapes*, corresponding to their association with the glyph feature in scatter plots.
+
+Further criticism included the design of feature labels in plots, which only display after pointing at the graph with a controller and the quality of feedback when selecting an attribute from the data brush. One participant suggested that labels in scatterplots could simultaneously display values from multiple attributes, while another suggested the use of an analog stick to flip between various views inside the statistics panel (*swatch*).
 
 1. (sickness) https://www.researchgate.net/publication/221494074_Simulator_Sickness_in_Mobile_Spatial_Sound_Spaces

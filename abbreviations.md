@@ -25,6 +25,7 @@
 | PCA | Principal component analysis |
 | SDK | Software development kit |
 | SPA | Single-page application |
+| SSQ | Simulator Sickness Questionnaire |
 | SQL | Structured Query Language |
 | REST | Representational State Transfer |
 | UI | User interface |
