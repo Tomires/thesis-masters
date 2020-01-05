@@ -51,7 +51,7 @@ Inside VR, Frank selects the dataset he had just uploaded and creates a globe pl
 
 ### Creating an integration
 
-Quinn has recently finished work on her new army of internet-connected drones. She is using Python to periodically gather measurements of temperature, humidity, wind direction and wind speed. Every day at a set time, the drones travel along a pre-programmed path and log measurements at certain locations. These measurements are then dumped into a file, which is stored in the drone's internal memory. Quinn, wanting to utilize the full capabilities of her drone, decides to add an integration to her Python script. She opens up our application, logs into her account and adds the file containing her last measurements as a new dataset. She then turns on a feature called *version history*, that enables her to upload multiple versions of the same dataset.
+Quinn has recently finished work on her new fleet of internet-connected drones. She is using Python to periodically gather measurements of temperature, humidity, wind direction and wind speed. Every day at a set time, the drones travel along a pre-programmed path and log measurements at certain locations. These measurements are then dumped into a file, which is stored in the drone's internal memory. Quinn, wanting to utilize the full capabilities of her drone, decides to add an integration to her Python script. She opens up our application, logs into her account and adds the file containing her last measurements as a new dataset. She then turns on a feature called *version history*, that enables her to upload multiple versions of the same dataset.
 
 Quinn proceeds to look up the API key specific to the dataset she had just added along with instructions on how to set up the Python integration. After installing the integration from Python's package manager, she replaces the bit of code that saves measured data as a file with a snippet that she found. The next day after her drones return from their travels, Quinn notices that a new version of data has been added to her dataset. She puts on her VR headset, creates a map plot and assigns attributes from her dataset onto its features. Quinn then changes between the two versions and can see that today's measurements indicate higher humidity in certain areas as well as a change in wind direction.
 
@@ -193,23 +193,29 @@ Spatial type is exclusive to matrix datasets, where it represents the sole "attr
 
 ## Component design
 
-Two big issues in present-day virtual reality technology that we would like to focus on are low pixel density of displays on HMDs compared to modern computer monitors and non-intuitiveness of text input in VR. The first fact leads to poor legibility of text below a certain size. This effect is compounded in HMDs with an OLED screen, due to their characteristic pentile subpixel arrangement. Text input in VR typically consists of pointing the controller towards a virtual keyboard, the layout of which is reminiscent of its smartphone variant. Using such keyboard for a short amount of time is a mere inconvenience, attempting to do so for longer periods of time will lead to fatigue, due to the need to precisely position a controller in space.
+Two big issues in present-day virtual reality technology that we would like to focus on are low pixel density of displays on most consumer HMDs compared to modern computer monitors and non-intuitiveness of text input in VR. The first fact leads to poor legibility of text below a certain size. This effect is compounded in HMDs with an OLED screen, due to their characteristic pentile subpixel arrangement. Text input in VR typically consists of pointing the controller towards a virtual keyboard, the layout of which is reminiscent of its smartphone variant. Using such keyboard for a short amount of time is a mere inconvenience, attempting to do so for longer periods of time will lead to fatigue, due to the need to precisely position a controller in space.
 
-Over the years, there have been many attempts to come up with a solution that mitigates the fatigue, one of which is a project called Punchkeyboard.[3] We had originally planned on designing a similar solution, however doing so would only work in 6DOF, requiring us to use a traditional keyboard interface in 3DOF. In order to alleviate both these issues, we came up with a component design, which divides the overall workflow - text input is done inside a WIMP interface on the computer, allowing the user to use the computer keyboard they are most likely already familiar with. Furthermore, the usage of text in the VR part of our application is greatly reduced in favor of using icons.
+![Comparison of pixel density between a high-end consumer headset and a business-oriented HMD.](images/pixel_density.png)[3]
+
+Over the years, there have been many attempts to come up with a solution that mitigates the fatigue, one of which is a project called Punchkeyboard.[4] We had originally planned on designing a similar solution, however doing so would only work in 6DOF, requiring us to use a traditional keyboard interface in 3DOF. In order to alleviate both these issues, we came up with a component design, which divides the overall workflow - text input is done inside a WIMP interface on the computer, allowing the user to use the computer keyboard they are most likely already familiar with. Furthermore, the usage of text in the VR part of our application is greatly reduced in favor of using icons.
+
+![Example use of Punchkeyboard.](images/punch_keyboard.png)[4]
 
 The three distinct components that we have chosen to divide our environment into are as follows - plugins, Manager and Navigator. *Plugins* are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. *Manager* enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. *Navigator* allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
 
-![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[4]
+![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[5]
 
-## Challenges of designing VR applications
+## Challenges of VR design
 
-The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are infinitely more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without delving into code.
+The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are infinitely more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without being forced to delve into code. The typical workflow for VR prototyping consists of drawing sketches, creating 2D and 3D assets that we intend to use in our project and then positioning said assets inside a *static* 3D environment (*spatial prototyping*). The user is then able to move between these scenes and also in 3D space, but they are unable to interact with any of the objects.[6] Commonly used tools for spatial prototyping include Google Blocks[7] and Microsoft Maquette[8]. We will be using the latter as it is the more advanced of the two.
 
-**EXPAND**
-[5]
+When it comes to our workflow, we will begin by creating a sketch of basic interactions. This is key, as the design of our user interface greatly depends on limitations imposed by the interaction scheme that we are going to use. We will follow up by creating a UI design for our application, which will share its design language with Manager, allowing for a consistent experience. Afterwards, we will alternate between designing prototypes in Maquette and implementing new features in our game engine of choice. After each run, we gather user feedback and attempt to incorporate it into our design.
 
 1. (hta) https://www.uxmatters.com/mt/archives/2010/02/hierarchical-task-analysis.php
 2. (imaxes) https://dl.acm.org/citation.cfm?id=3126613
-3. (punchkeyboard) https://uxdesign.cc/keyboard-input-for-virtual-reality-d551a29c53e9/
-4. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
-5. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
+3. (varjocomparison) https://varjo.com/use-cases/create/
+4. (punchkeyboard) https://uxdesign.cc/keyboard-input-for-virtual-reality-d551a29c53e9/
+5. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
+6. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
+7. (googleblocks) https://arvr.google.com/blocks/
+8. (msmaquette) https://www.maquette.ms/
