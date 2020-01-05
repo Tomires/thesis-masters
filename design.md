@@ -128,7 +128,7 @@ Lastly, there should be integration support for popular programming languages th
 
 In order to satisfy the non-specificity design goal, we have to offer the user a variety of plot options. Six plot types were selected for implementation, four for multivariate and two for spatial data (matrix datasets).
 
-![Type compatibility with different features of each plot.](images/type_matrix.png)
+![Clockwise from top left: surface plot, globe plot, scatter plot, bar plot, parallel coordinates plot, map plot.](images/plot_types.png)
 
 #### Scatter plot
 
@@ -155,6 +155,8 @@ Accepts spatial data. Renders a continuous mesh, the elevation of which is deter
 #### Box plot
 
 Accepts spatial data. Renders a series of bars, with their height determined in the same way as with the surface plot.
+
+![Type compatibility with different features of each plot.](images/type_matrix.png)
 
 ### Attribute types
 
