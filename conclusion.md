@@ -1,4 +1,6 @@
-# Testing
+# Conclusion
+
+**REVISE**
 
 This chapter compares the effeciency of our application against that of its contemporary alternatives introduced in chapter 2. It also outlines the testing methodology.
 
@@ -36,6 +38,8 @@ b. Only applies to 3DOF version
 The total time necessary to complete the tasks is 29.55 seconds for 6DOF and 30.1 seconds for 3DOF versions, considerably faster than with contemporary tools introduced in chapter 2.
 
 ## User testing
+
+**REVISE, MENTION FEEDBACK**
 
 We plan to structure our testing sessions in the following order:
 
