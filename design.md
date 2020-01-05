@@ -83,7 +83,7 @@ The application should facilitate collaboration between multiple users. They sho
 
 Use cases of our application should not be limited to a select field or domain of data.
 
-### VR
+### Focus on VR
 
 The application's user interface should be tailor-made for virtual reality. It is to be designed around a spatial environment while mitigating all shortcomings of present-day virtual reality technology.
 
@@ -193,20 +193,23 @@ Spatial type is exclusive to matrix datasets, where it represents the sole "attr
 
 ## Component design
 
-**EXPAND**
+Two big issues in present-day virtual reality technology that we would like to focus on are low pixel density of displays on HMDs compared to modern computer monitors and non-intuitiveness of text input in VR. The first fact leads to poor legibility of text below a certain size. This effect is compounded in HMDs with an OLED screen, due to their characteristic pentile subpixel arrangement. Text input in VR typically consists of pointing the controller towards a virtual keyboard, the layout of which is reminiscent of its smartphone variant. Using such keyboard for a short amount of time is a mere inconvenience, attempting to do so for longer periods of time will lead to fatigue, due to the need to precisely position a controller in space.
 
-We have decided to divide our environment into three distinct components - plugins, Manager and Navigator. *Plugins* are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. *Manager* enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. *Navigator* allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
+Over the years, there have been many attempts to come up with a solution that mitigates the fatigue, one of which is a project called Punchkeyboard.[3] We had originally planned on designing a similar solution, however doing so would only work in 6DOF, requiring us to use a traditional keyboard interface in 3DOF. In order to alleviate both these issues, we came up with a component design, which divides the overall workflow - text input is done inside a WIMP interface on the computer, allowing the user to use the computer keyboard they are most likely already familiar with. Furthermore, the usage of text in the VR part of our application is greatly reduced in favor of using icons.
 
-![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[3]
+The three distinct components that we have chosen to divide our environment into are as follows - plugins, Manager and Navigator. *Plugins* are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. *Manager* enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. *Navigator* allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
+
+![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[4]
 
 ## Challenges of designing VR applications
 
 The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are infinitely more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without delving into code.
 
 **EXPAND**
-[4]
+[5]
 
 1. (hta) https://www.uxmatters.com/mt/archives/2010/02/hierarchical-task-analysis.php
 2. (imaxes) https://dl.acm.org/citation.cfm?id=3126613
-3. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
-4. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
+3. (punchkeyboard) https://uxdesign.cc/keyboard-input-for-virtual-reality-d551a29c53e9/
+4. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
+5. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
