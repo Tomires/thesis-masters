@@ -35,6 +35,8 @@ In addition to questionnaires, we made use of automated user testing environment
 - Movement in immersive mode.
 - Plot deletion.
 
+Generated test reports from the second round of testing are available as part of data provided with this thesis.
+
 ## Installation guide
 
 In this section we will go over the setup procedures for components provided with this thesis. It is important to note that there are multiple builds available for each component - 1901 (January), 1908 (August) and 1912 (December). Intercompatibility of components from different builds is not guaranteed (i.e. the August build of Navigator may not be compatible with the December build of Manager).

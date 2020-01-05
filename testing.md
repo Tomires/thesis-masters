@@ -76,7 +76,7 @@ Brief demos of 3DOF and 6DOF versions of Navigator were then given, each precede
 
 A timed test was then administered with participants being given the following tasks:
 
-1. Load dataset "Iris".
+1. Load dataset *Iris*.
 2. Create a bar plot.
 3. Move plot to desired position.
 4. Move plot to desired position and scale it appropriately.
@@ -86,19 +86,19 @@ A timed test was then administered with participants being given the following t
 8. Move plot to desired position and scale it appropriately.
 9. Delete the scatter plot.
 10. Create a new scatter plot in front of you.
-11. Assign "Sepal Width" to one of spatial axes.
-12. Assign "Petal Width" to another spatial axis.
-13. Assign "Sepal Length" to the third spatial axis.
-14. Assign "Class" to plot"s color.
+11. Assign *Sepal Width* to one of spatial axes.
+12. Assign *Petal Width* to another spatial axis.
+13. Assign *Sepal Length* to the third spatial axis.
+14. Assign *Class* to plot's color.
 15. Slice the plot to isolate the green cluster using Petal Width.
 16. Create a new scatter plot.
-17. Load dataset "Abalone".
-18. Assign "Diameter" to one of spatial axes.
-19. Assign "Length" to another spatial axis.
-20. Assign "Whole weight" to the third spatial axis.
-21. Assign "Sex" to plot"s color.
-22. Assign "Rings" to plot"s size.
-23. Slice "Whole weight" from 0.8 to 2.0.
+17. Load dataset *Abalone*.
+18. Assign *Diameter* to one of spatial axes.
+19. Assign *Length* to another spatial axis.
+20. Assign *Whole weight* to the third spatial axis.
+21. Assign *Sex* to plot's color.
+22. Assign *Rings* to plot's size.
+23. Slice *Whole weight* from 0.8 to 2.0.
 
 After concluding the timed test, participants were given the third and final part of our questionnaire. There were tasked to choose whether they agree with the following statements on a scale from 1 to 5:
 
@@ -160,12 +160,50 @@ This round of testing took place at Czech Technical University in Prague. Seven 
 9. Timed tests incorporating all components.
 10. Questionnaire - Cyberplot-specific section.
 
-We have been able to acquire an evaluation version of Virtualitics immersive analytics software, which replaced ParaView in our testing schedule. Demonstration of the 3DOF version of Navigator has been omitted due to time constraints.
+We have been able to acquire an evaluation version of Virtualitics immersive analytics software, which replaced ParaView in our testing schedule. Demonstration of the 3DOF version of Navigator has been omitted due to time constraints. Emphasis was placed on newly added features, most notably the new plot types and immersive mode.
 
 The first part of our questionnaire was left intact, while the second part substituted ParaView for Virtualitics and now reads as follows:
 
 - Rank ease of use of Tableau. (1-5, where 5 means easy to use)
 - Rank ease of use of Virtualitics.
+
+The timed test consisted of the following tasks:
+
+1. Load dataset *Iris*.
+2. Create a scatter plot.
+3. Assign *Sepal Width* to one of spatial axes.
+4. Assign *Petal Width* to another spatial axis.
+5. Assign *Sepal Length* to the third spatial axis.
+6. Assign *Class* to plot's color.
+7. Assign *Class* to label.
+8. Rotate the plot.
+9. Enter immersive mode.
+10. Slice Sepal Width approximately from 0.78 to 1.8.
+11. Slice Petal Width approximately from 2.8 to 3.7.
+12. Scale the plot.
+13. Move about.
+14. Exit immersive mode.
+15. Load dataset *Population*.
+16. Create a globe plot.
+17. Assign latitude.
+18. Assign longitude.
+19. Assign population onto values.
+20. Enter immersive mode.
+21. Open up the statistics panel.
+22. Scale and rotate the globe.
+23. Exit immersive mode.
+24. Create a surface plot.
+25. Load dataset Sombrero.
+26. Assign values onto newly created surface plot.
+27. Enter immersive mode.
+28. Move about.
+29. Exit immersive mode.
+30. Delete one of the plots.
+31. Listen to instructions.
+32. Listen to instructions.
+33. Listen to instructions.
+
+The last three tasks were more involved and required answering an open-ended question regarding a specific dataset based on observation. The reporting capabilities of our automated testing suite were greatly improved with the addition of action-based logging - please see the appendix for details.
 
 The third part has been updated with newly added features and rephrased as to reduce any possible bias, which the author felt were present in the first version of the questionnaire. Participants were asked to rank their satisfaction with the following:
 
