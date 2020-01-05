@@ -152,7 +152,7 @@ Accepts multivariate data. Contains two or more axes, each of which represent a 
 
 Accepts spatial data. Renders a continuous mesh, the elevation of which is determined by numerical values at a specified position in the two-dimensional matrix.
 
-#### Box plot
+#### Bar plot
 
 Accepts spatial data. Renders a series of bars, with their height determined in the same way as with the surface plot.
 
