@@ -97,7 +97,7 @@ When adding a new dataset, the application should be able to predict certain fea
 
 ## Feature selection
 
-In this section, we will set the scope of our application by selecting features to meet aforementioned design goals and use cases. The user should be load industry-standard comma-delimited (CSV) files into the environment. Two data structures are to be supported - *multivariate datasets*, which contain multiple attributes arranged in columns and two-dimensional arrays of numerical values, which will be further referred to as *matrix datasets*. Multivariate datasets may or may not include attribute labels. If they are present, they should be presented as a comma-delimited list on the first row of the file as per the example below.
+In this section, we will set the scope of our application by selecting features to meet aforementioned design goals and use cases. The user should be load industry-standard comma-delimited (CSV) files into the environment. Two data structures are to be supported - *multivariate datasets*, which contain multiple attributes arranged in columns and two-dimensional arrays of numerical values, which will be further referred to as *matrix datasets* for the lack of a more suitable term. Multivariate datasets may or may not include attribute labels. If they are present, they should be presented as a comma-delimited list on the first row of the file as per the example below.
 
 ```
 Sepal length,Sepal width,Petal length,Petal width,Species 
@@ -118,7 +118,7 @@ When loading a new dataset into our application, the data type of each attribute
 
 The user should be able to load a new version of the dataset, provided the data structure meets dataset specifications. They are to be given an option to replace existing data or add a new *version*. In the latter case, the user will have the ability to change between versions when visualizing data from said dataset.
 
-When in VR, the user will be able to choose between five types of plots discussed below, position them freely around the virtual environment, adjust their rotation and scale, assign dataset attributes onto features of the plot, specify bounds for each spatial axis (*slicing*) and view basic dataset metadata and statistics of attributes contained within said dataset.
+When in VR, the user will be able to choose between five types of plots discussed below, position them freely around the virtual environment, adjust their rotation and scale, assign dataset attributes onto features of the plot and view basic dataset metadata and statistics of attributes contained within said dataset. The user should also be able to filter by attribute value, regardless of whether said attribute is assigned onto a feature of the plot.
 
 Collaboration features should include the ability to share datasets with another user directly within the environment and also the ability to invite said user to a shared virtual environment with users represented as articulated virtual avatars that are capable of moving in space and voice communication.
 
@@ -126,17 +126,35 @@ Lastly, there should be integration support for popular programming languages th
 
 ### Plot types
 
-In order to satisfy the non-specificity design goal, we have to offer the user with a number of plot options. **XX**
+In order to satisfy the non-specificity design goal, we have to offer the user a variety of plot options. Six plot types were selected for implementation, four for multivariate and two for spatial data (matrix datasets).
+
+![Type compatibility with different features of each plot.](images/type_matrix.png)
 
 #### Scatter plot
 
+Accepts multivariate data. Allows the user to assign numerical values onto spatial axes, which determine position of the nodes. Spatial axes also allow for the assignment of categorical attributes, however the ordering in this case is non-deterministic. The user is able to specify bounds for each axis. Assigneable non-spatial features include color, size, shape and label, which is set to appear when the user points at a node.
+
+Color mapping differs based on the type of the assigned attribute. Numerical attributes map onto a gradient, which can be diverging (if the attribute includes both positive and negative numbers) or sequential (otherwise). When assigning a categorical attribute, each unique value is given a color with distinct hue. Size only accepts numerical attributes. Shape accepts either numerical or categorical attributes. In the former case, the values are divided into two bins of a similar size with median used as the division point, each half is then rendered as a different glyph. In the latter case, we try to map each unique value onto a distinct glyph. If the number of distinguishable glyphs is smaller than the number of unique values, one of the glyphs can substitute a greater number of unique values.
+
 #### Globe plot
+
+Accepts multivariate data. The globe plot accepts two locational attributes for coordinates (latitude, longitude) and a single numerical or categorical attribute. If a numerical attribute is assigned as a value, it renders bars that protrude from the globe. Assignment of a categorical attribute will result in the rendering of uniformly-sized marks of different colors, the hue of which is again distinct for each unique value.
 
 #### Map plot
 
+Accepts multivariate data. A flat version of the globe plot suitable for viewing smaller geospatial areas.
+
+#### Parallel coordinate plot
+
+Accepts multivariate data. Contains two or more axes, each of which represent a numerical or categorical attribute. A polyline is then created between the axes with vertices positioned in the same way as values on a spatial axis of a scatter plot. The user is able to position the axes around the space using an interaction technique borrowed from a distinguished paper.[2]
+
 #### Surface plot
 
+Accepts spatial data. Renders a continuous mesh, the elevation of which is determined by numerical values at a specified position in the two-dimensional matrix.
+
 #### Box plot
+
+Accepts spatial data. Renders a series of bars, with their height determined in the same way as with the surface plot.
 
 ### Attribute types
 
@@ -179,15 +197,16 @@ Spatial type is exclusive to matrix datasets, where it represents the sole "attr
 
 We have decided to divide our environment into three distinct components - plugins, Manager and Navigator. *Plugins* are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. *Manager* enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. *Navigator* allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
 
-![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[2]
+![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[3]
 
 ## Challenges of designing VR applications
 
 The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are infinitely more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without delving into code.
 
 **EXPAND**
-[3]
+[4]
 
 1. (hta) https://www.uxmatters.com/mt/archives/2010/02/hierarchical-task-analysis.php
-2. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
-3. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
+2. (imaxes) https://dl.acm.org/citation.cfm?id=3126613
+3. (santos) https://www.sciencedirect.com/science/article/pii/S0097849304000251/
+4. (vrprototyping) https://uxdesign.cc/rapid-vr-prototyping-without-coding-in-2019-94d9ca2b544a
