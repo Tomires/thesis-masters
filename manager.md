@@ -1,6 +1,6 @@
 # Manager
 
-![Screenshot of Manager.](images/manager.png)
+![User interface of Manager.](images/manager.png)
 
 Manager is the name for a component which enables the user to load datasets from their local computer and perform basic editing operations, such as data enrichment and attribute specification. In order to satisfy the design goal of mitigating all shortcoming of VR (*Focus on VR*), we have created a separate component that is to be accessible through a personal computer. Faclitation of collaboration, another of our design goals, demands that we create a centralized server node. 
 
@@ -49,9 +49,7 @@ The next stage included implementation of the component using Flask[4] and Vue.j
 
 ### August build
 
-![User interface of Manager.](images/manager.png)
-
-As it is a multi-user application, the user first has to create an account. After logging in, they are presented with a list of their datasets on a sidebar to the left. In the upper right corner of the screen, they can see their username and access a notification center, which is where they are able to answer share requests and, most importantly, access the VR headset management window. This window gives them information on headsets associated with their account, such as an identifier (name of HMD as well as the computer's domain name if provided by host OS) and time of association.
+As Manager is a multi-user application, the user first has to create an account. After logging in, they are presented with a list of their datasets on a sidebar to the left. In the upper right corner of the screen, they can see their username and access a notification center, which is where they are able to answer share requests and, most importantly, access the VR headset management window. This window gives them information on headsets associated with their account, such as an identifier (name of HMD as well as the computer's domain name if provided by host OS) and time of association.
 
 In the lower left corner is a button titled *Add new dataset*. Pressing it opens up a wizard for adding a dataset. The same wizard with slight differences is also used when updating a dataset. In the first step, the user can select their data source. If they choose a programming environment, they receive instructions on how to use the plugin system.
 
