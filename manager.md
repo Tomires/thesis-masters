@@ -81,8 +81,6 @@ Datasets can be updated in the same way as they are created, that is using a loc
 
 The December build of Manager includes the addition of a new attribute type for storing locations, a brand new installation script that allows the adminstrator to install from source code using a single command as well as a number of bugfixes.
 
-![Automatic attribute assignment in Manager.](images/attribute_assignment.pdf)
-
 The most significant feature is support for spatial datasets. When adding all-numeric datasets, user is asked to select whether the dataset in question is multivariate or spatial. Spatial datasets are compatible with certain plots inside Navigator, in both components they are represented as a single unified attribute with a special type.
 
 ![A spatial dataset in Manager.](images/manager_matrix.png)
