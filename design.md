@@ -1,6 +1,6 @@
 # Design
 
-In this chapter we will discuss the users and use cases of our application, specify important goals that we would like to meet, select features to help us meet these goals and talk about implications of virtual reality prototyping on our design process.
+In this chapter we will discuss in detail the target user group and use cases of our application, specify important goals that we would like to meet, select features to help us meet these goals and talk about implications of virtual reality prototyping on our design process.
 
 ## Personas
 
@@ -16,7 +16,7 @@ Frank is a hobbyist. He is capable of performing basic computer operations, such
 
 ![](images/persona_quinn.jpg)
 
-Quinn is a senior data analyst working in meteorological agency. She possesses advanced programming skills and her current task is to build a networked swarm of drones that gather meteorological data from locations around her neighbourhood. She wants to remotely access the measured data and share measurements from particular days with her colleagues.
+Quinn is a senior data analyst working at a meteorological agency. She possesses advanced programming skills and her current task is to build a networked swarm of drones that gather meteorological data from locations around her neighbourhood. She wants to remotely access the measured data and share measurements from particular days with her colleagues.
 
 ### IT administrator
 
@@ -30,13 +30,13 @@ The goal of our research is to create a virtual reality visualization environmen
 
 ![Hierarchical task analysis of typical immersive analytics software.](images/hta.pdf)
 
-The users typically traverse these tasks in order, however, depending on the scenario, they may want to repeat tasks 2-4. It is important to note, that when collaborating with another user, tasks 1-2 can be skipped. Detailed description of each task follows.
+The users typically traverse these tasks in order, however, depending on the scenario, they may want to repeat tasks 2-4. It is important to note, that when collaborating with another user, tasks 1-2 can be skipped. Detailed descriptions of each task follow.
 
 | Task | Description |
 |---|---|
-| Prepare data | The user has to define the underlying structure of data they want to use. This is typically a local file in a certain format or an API provided by a third-party application. They can then proceed to retrieve such data and specify various associated feature (*metadata*), such as attribute types or labels (in case of multivariate data). They are also able to select a subset of data to work with or fill in missing values. |
+| Prepare data | The user has to define the underlying structure of data they want to use. This is typically a local file in a certain format or an API provided by a third-party application. They can then proceed to retrieve such data and specify various associated features (*metadata*), such as attribute types or labels (in case of multivariate data). They are also able to select a subset of data to work with or fill in missing values. |
 | Map data | The user makes an informed decision on which plot type they wish to use and associates attributes from their dataset with its features. They are also able to conduct plot-specific filtering (e.g. by modifying the range of displayed values on a spatial axis in scatter plots). |
-| Analyze data | This task includes looking at plots from different view points and discovering further information by consulting the legend. |
+| Analyze data | This task includes looking at plots from different viewpoints and discovering further information by consulting the legend. |
 | Collaborate | Collaboration can be divided into two distinct areas - synchronous and asynchronous. If the user we are collaborating with is available for real-time collaboration, we can invite them to a persistent virtual space and communicate using voice and physical gestures that map onto our virtual avatars. Alternatively, we are able to send them a copy of our dataset, which they can analyze at their leisure. |
 
 ## Scenarios
@@ -51,13 +51,13 @@ Inside VR, Frank selects the dataset he had just uploaded and creates a globe pl
 
 ### Creating an integration
 
-Quinn has recently finished work on her new fleet of internet-connected drones. She is using Python to periodically gather measurements of temperature, humidity, wind direction and wind speed. Every day at a set time, the drones travel along a pre-programmed path and log measurements at certain locations. These measurements are then dumped into a file, which is stored in the drone's internal memory. Quinn, wanting to utilize the full capabilities of her drone, decides to add an integration to her Python script. She opens up our application, logs into her account and adds the file containing her last measurements as a new dataset. She then turns on a feature called *version history*, that enables her to upload multiple versions of the same dataset.
+Quinn has recently finished work on her new fleet of internet-connected drones. She is using Python to periodically gather measurements of temperature, humidity, wind direction and wind speed. Every day at a set time, the drones travel along a pre-programmed path and log measurements at certain locations. These measurements are then dumped into a file, which is stored in the drone's internal memory. Quinn, wanting to utilize the full capabilities of her drones, decides to add an integration to her Python script. She opens up our application, logs into her account and adds the file containing her last measurements as a new dataset. She then turns on a feature called *version history*, that enables her to upload multiple versions of the same dataset.
 
 Quinn proceeds to look up the API key specific to the dataset she had just added along with instructions on how to set up the Python integration. After installing the integration from Python's package manager, she replaces the bit of code that saves measured data as a file with a snippet that she found. The next day after her drones return from their travels, Quinn notices that a new version of data has been added to her dataset. She puts on her VR headset, creates a map plot and assigns attributes from her dataset onto its features. Quinn then changes between the two versions and can see that today's measurements indicate higher humidity in certain areas as well as a change in wind direction.
 
 ### Collaborating with another user
 
-Quinn wants to share her findings with her fellow employee, Bob. While in VR, she opens her friends list and notices that Bob is online. She invites him to join her in VR. Bob gets a notification and puts on his VR headset. He accepts the invitation and after waiting several seconds for Quinn's data to load, appears in a shared virtual space beside Quinn's virtual avatar. Quinn then briefs Bob about the current meteorological situation using the application's voice communication functionality. She points to the area of interest and both agree that the situation is unusual. Bob requests a personal copy of the dataset and Quinn is happy to oblige. She takes off her VR headset and sends the dataset to Bob who then receives a prompt to accept the share request.
+Quinn wants to share her findings with her fellow employee, Bob. While in VR, she opens her friends list and notices that Bob is online. She invites him to join her in VR. Bob gets a notification and puts on his VR headset. He accepts the invitation and after waiting several seconds for Quinn's data to load, appears in a shared virtual space beside Quinn's virtual avatar. Quinn then briefs Bob on the current meteorological situation using the application's voice communication functionality. She points to the area of interest and both agree that the situation is unusual. Bob requests a personal copy of the dataset and Quinn is happy to oblige. She takes off her VR headset and sends the dataset to Bob who then receives a prompt to accept the share request.
 
 ## Design goals
 
@@ -93,11 +93,11 @@ The application is to be available on all major virtual reality platforms across
 
 ### Automatization
 
-When adding a new dataset, the application should be able to predict certain features, such as attribute type or structure of an uploaded dataset. The user should only be prompted if there is a high degree of uncertainity. In the inverse case, we will choose the most likely settings and allow the user to make modifications later at their leisure.
+When adding a new dataset, the application should be able to predict certain features, such as attribute type or structure of an uploaded dataset. The user should only be prompted if there is a high degree of uncertainty. In the inverse case, we will choose the most likely settings and allow the user to make modifications later at their leisure.
 
 ## Feature selection
 
-In this section, we will set the scope of our application by selecting features to meet aforementioned design goals and use cases. The user should be load industry-standard comma-delimited (CSV) files into the environment. Two data structures are to be supported - *multivariate datasets*, which contain multiple attributes arranged in columns and two-dimensional arrays of numerical values, which will be further referred to as *matrix datasets* for the lack of a more suitable term. Multivariate datasets may or may not include attribute labels. If they are present, they should be presented as a comma-delimited list on the first row of the file as per the example below.
+In this section, we will set the scope of our application by selecting features to meet aforementioned design goals and use cases. The user should be able to load industry-standard comma-delimited (CSV) files into the environment. Two data structures are to be supported - *multivariate datasets*, which contain multiple attributes arranged in columns and two-dimensional arrays of numerical values, which will be further referred to as *matrix datasets* for the lack of a more suitable term. Multivariate datasets may or may not include attribute labels. If they are present, they should be presented as a comma-delimited list on the first row of the file as per the example below.
 
 ```
 Sepal length,Sepal width,Petal length,Petal width,Species 
@@ -114,7 +114,7 @@ Sepal length,Sepal width,Petal length,Petal width,Species
 0.3,0.4,0.6,0.4,0.3
 ```
 
-When loading a new dataset into our application, the data type of each attribute should be automatically determined and presented to the user along with an option to change to another type that suits the provided data. In addition, the user should be presented with basic statistical data and data preview, so that they can make an informed decision regarding the data type of each attribute. The specifics of each attribute type are discussed later in this section. Users should also be able to change label of each attribute and decide on how to fill in missing values.
+When loading a new dataset into our application, the data type of each attribute should be automatically determined and presented to the user along with an option to change to another type that suits the provided data. In addition, the user should be presented with basic statistical data and data preview, so that they can make an informed decision regarding the data type of each attribute. The specifics of each attribute type are discussed later in this section. Users should also be able to change the label of each attribute and decide on how to fill in missing values.
 
 The user should be able to load a new version of the dataset, provided the data structure meets dataset specifications. They are to be given an option to replace existing data or add a new *version*. In the latter case, the user will have the ability to change between versions when visualizing data from said dataset.
 
@@ -132,7 +132,7 @@ In order to satisfy the non-specificity design goal, we have to offer the user a
 
 #### Scatter plot
 
-Accepts multivariate data. Allows the user to assign numerical values onto spatial axes, which determine position of the nodes. Spatial axes also allow for the assignment of categorical attributes, however the ordering in this case is non-deterministic. The user is able to specify bounds for each axis. Assigneable non-spatial features include color, size, shape and label, which is set to appear when the user points at a node.
+Accepts multivariate data. Allows the user to assign numerical values onto spatial axes, which determine the position of the nodes. Spatial axes also allow for the assignment of categorical attributes, however the ordering in this case is non-deterministic. The user is able to specify bounds for each axis. Assignable non-spatial features include color, size, shape and label, which is set to appear when the user points at a node.
 
 Color mapping differs based on the type of the assigned attribute. Numerical attributes map onto a gradient, which can be diverging (if the attribute includes both positive and negative numbers) or sequential (otherwise). When assigning a categorical attribute, each unique value is given a color with distinct hue. Size only accepts numerical attributes. Shape accepts either numerical or categorical attributes. In the former case, the values are divided into two bins of a similar size with median used as the division point, each half is then rendered as a different glyph. In the latter case, we try to map each unique value onto a distinct glyph. If the number of distinguishable glyphs is smaller than the number of unique values, one of the glyphs can substitute a greater number of unique values.
 
@@ -146,7 +146,7 @@ Accepts multivariate data. A flat version of the globe plot suitable for viewing
 
 #### Parallel coordinate plot
 
-Accepts multivariate data. Contains two or more axes, each of which represent a numerical or categorical attribute. A polyline is then created between the axes with vertices positioned in the same way as values on a spatial axis of a scatter plot. The user is able to position the axes around the space using an interaction technique borrowed from a distinguished paper.[2]
+Accepts multivariate data. Contains two or more axes, each of which represents a numerical or categorical attribute. A polyline is then created between the axes with vertices positioned in the same way as values on a spatial axis of a scatter plot. The user is able to position the axes around the space using an interaction technique borrowed from a distinguished paper.[2]
 
 #### Surface plot
 
@@ -170,7 +170,7 @@ Nominal attributes do not have any special requirements. Attributes default to t
 
 #### Numerical
 
-Numerical attributes represent numbers in both decimal and integer formats. Decimal point is to be represented by a dot. The type is automatically assigned if all of attribute's values are numeric and do not satisfy conditions set for the locational type.
+Numerical attributes represent numbers in both decimal and integer formats. Decimal point is to be represented by a dot. The type is automatically assigned if all of the attribute's values are numeric and do not satisfy conditions set for the locational type.
 
 #### Categorical
 
@@ -182,7 +182,7 @@ Vector type is designed for storing three-dimensional vectors. The accepted form
 
 #### Locational
 
-Locational type is a subset of the numerical type representing geospatial coordinates. Decimal values between -180 and 180 are permitted. The full range is used to represent longitude, while a reduced range from -90 to 90 represents latitude. Attribute is automatically determined to be spatial if it meets the requirements and is labeled as one of the following (case-insensitive):
+Locational type is a subset of the numerical type representing geospatial coordinates. Decimal values between -180 and 180 are permitted. The full range is used to represent longitude, while a reduced range from -90 to 90 represents latitude. An attribute is automatically determined to be spatial if it meets the requirements and is labeled as one of the following (case-insensitive):
 
 - latitude
 - longitude
@@ -199,7 +199,7 @@ Two big issues in present-day virtual reality technology that we would like to f
 
 ![Comparison of pixel density between a high-end consumer headset and a business-oriented HMD.](images/pixel_density.png)[3]
 
-Over the years, there have been many attempts to come up with a solution that mitigates the fatigue, one of which is a project called Punchkeyboard.[4] We had originally planned on designing a similar solution, however doing so would only work in 6DOF, requiring us to use a traditional keyboard interface in 3DOF. In order to alleviate both these issues, we came up with a component design, which divides the overall workflow - text input is done inside a WIMP interface on the computer, allowing the user to use the computer keyboard they are most likely already familiar with. Furthermore, the usage of text in the VR part of our application is greatly reduced in favor of using icons.
+Over the years, there have been many attempts to come up with a solution that mitigates the fatigue, one of which is a project called Punchkeyboard.[4] We had originally planned on designing a similar solution, however doing so would only work in 6DOF, requiring us to use a traditional keyboard interface in 3DOF. In order to alleviate both these issues, we came up with a component design, which divides the overall workflow - text input is done inside a WIMP interface on the computer, allowing the user to use the computer keyboard they are most likely already familiar with. Furthermore, usage of text in the VR part of our application is greatly reduced in favor of using icons.
 
 ![Example use of Punchkeyboard.](images/punch_keyboard.png)[4]
 
@@ -209,7 +209,7 @@ The three distinct components that we have chosen to divide our environment into
 
 ## Challenges of VR design
 
-The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are infinitely more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without being forced to delve into code. The typical workflow for VR prototyping consists of drawing sketches, creating 2D and 3D assets that we intend to use in our project and then positioning said assets inside a *static* 3D environment (*spatial prototyping*). The user is then able to move between these scenes and also in 3D space, but they are unable to interact with any of the objects.[6] Commonly used tools for spatial prototyping include Google Blocks[7] and Microsoft Maquette[8]. We will be using the latter as it is the more advanced of the two.
+The spatial nature of virtual reality applications carries with it certain design challenges, which make it difficult to utilize the typical prototyping workflow. As interaction techniques in VR are much more complex than in typical WIMP applications, we are unable to create a rich interactive prototype without being forced to delve into code. The typical workflow for VR prototyping consists of drawing sketches, creating 2D and 3D assets that we intend to use in our project and then positioning said assets inside a *static* 3D environment (*spatial prototyping*). The user is then able to move between these scenes and also in 3D space, but they are unable to interact with any of the objects.[6] Commonly used tools for spatial prototyping include Google Blocks[7] and Microsoft Maquette[8]. We will be using the latter as it is the more advanced of the two.
 
 When it comes to our workflow, we will begin by creating a sketch of basic interactions. This is key, as the design of our user interface greatly depends on limitations imposed by the interaction scheme that we are going to use. We will follow up by creating a UI design for our application, which will share its design language with Manager, allowing for a consistent experience. Afterwards, we will alternate between designing prototypes in Maquette and implementing new features in our game engine of choice. After each run, we gather user feedback and attempt to incorporate it into our design.
 

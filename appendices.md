@@ -19,7 +19,7 @@ c. Not present as a separate action in the original paper. Instead it is include
 
 ## Test reports
 
-In addition to questionnaires, we made use of automated user testing environments to help analyze user behaviour within our application. In addition to times measured for each task, generated test reports include a listing of actions conducted by the user complete with timestamps. These include the following:
+In addition to questionnaires, we made use of automated user testing environments to help analyze user behaviour within our application. In addition to times measured for each task, generated test reports list actions conducted by the user complete with timestamps. These include the following:
 
 - Opening up a dataset.
 - Spawning a plot of a certain type.
@@ -28,8 +28,8 @@ In addition to questionnaires, we made use of automated user testing environment
 - Modification of attribute range.
 - Flick-based plot rotation.
 - Entering/leaving immersive mode.
-- Accessing databrush panel.
-- Accessing swatch (statistics) panel inside immersive mode.
+- Accessing data brush panel.
+- Accessing the Swatch (statistics panel) inside immersive mode.
 - Change of plot scale.
 - Change of plot scale in immersive mode.
 - Movement in immersive mode.
@@ -43,7 +43,7 @@ In this section we will go over the setup procedures for components provided wit
 
 ### Navigator
 
-Navigator, the VR component of our application, is provided as a collection of binary files. PC binaries require a computer running the latest version of Microsoft Windows 10 with Oculus software installed. Supported headsets include Oculus Rift and Oculus Rift S, the December build is also compatible with Windows Mixed Reality via SteamVR. To launch Navigator, open the exe file in a respective directory. Android binaries require Oculus Go or Oculus Quest standalone headsets with developer mode enabled.[2] These can be sideloaded using Android Debug Bridge and accessed via the Library interface under Unknown Sources.
+Navigator, the VR component of our application, is provided as a collection of binary files. PC binaries require a computer running the latest version of Microsoft Windows 10 with Oculus software (1908) or SteamVR (1912) installed. Supported headsets include Oculus Rift and Oculus Rift S, December build is also compatible with Windows Mixed Reality via SteamVR. To launch Navigator, open the exe file located in the respective directory. Android binaries require Oculus Go or Oculus Quest standalone headsets with developer mode enabled.[2] These can be sideloaded using Android Debug Bridge and accessed via the Library interface under Unknown Sources.
 
 By default, Navigator tries to connect to the public instance of Manager located at *cyberplot.tomires.eu*. If you would like to connect to a local version of Manager, please edit the */etc/hosts* file on your operating system (on Windows: *C:/Windows/System32/drivers/etc/hosts*). Insert the IP address of the server running Manager in the following format.
 
@@ -53,10 +53,9 @@ By default, Navigator tries to connect to the public instance of Manager located
 
 ### Manager
 
-Manager, the web component of our application, is provided in form of source code bundled with an installation script. Functionality has been tested on a clean install of Ubuntu 18.04 LTS. To begin setup, navigate inside the folder and run the provided script as superuser by using the following commands:
+Manager, the web component of our application, is provided in the form of source code bundled with an installation script. Functionality has been tested on a clean install of Ubuntu 18.04 LTS. To begin setup, navigate inside the folder and run the provided script as superuser by using the following command:
 
 ```
-chmod u+x install.sh
 sudo ./install.sh
 ```
 

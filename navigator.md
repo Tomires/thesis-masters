@@ -19,7 +19,7 @@ Users should be able to do the following:
 
 ## Interaction design
 
-We began the design process by creating sketches that highlight interaction techniques used within Navigator. Let us start by introducing the two most commonly used user interface elements - the attribute and the plot. The attribute element displays the label, type of the attribute as well as a data preview.
+We began the design process by creating sketches that highlight interaction techniques used within Navigator. Let us start by introducing the two pivotal user interface elements - the attribute and the plot. The attribute element displays the label, type of the attribute as well as a data preview.
 
 ![Attribute element in VR.](images/sketch_attribute.png)
 
@@ -31,11 +31,11 @@ Four shapes were designed for use as glyphs in scatter plots. The following 3D s
 
 ![2D and 3D variants of shapes used in scatter plots.](images/sketch_shapes.png)
 
-The original design included a *hot corners* feature, which enabled the user to physically grab corners of plot in 6DOF and stretch the plot. The August release substituted this feature for a more conventional resizing gesture. The faces of a plot's bounding box were to be used for setting bounds on spatial axes. Both features were replaced in the August build due to their reliance on room-scale - the user was supposed to move around the room, which would make the experience uncomfortable. They were also incompatible with 3DOF.
+The original design included a *hot corners* feature, which enabled the user to physically grab corners of plot in 6DOF and stretch the plot by doing so. The August release substituted this feature for a more conventional resizing gesture. The faces of a plot's bounding box were to be used for setting bounds on spatial axes. Both features were replaced in the August build due to their reliance on room-scale - the user was supposed to move around the room, which would make the experience uncomfortable. They were also incompatible with 3DOF input methods.
 
 ![Plot resize interaction in 6DOF.](images/sketch_6dofresize.png)
 
-The 6DOF version includes a panel attached to one of the controllers. This is possible due to the fact that 6DOF systems utilize two controllers - a primary controller can be used for dragging the attribute from the panel.
+The 6DOF version includes a panel attached to one of the controllers. This is possible due to the fact that 6DOF systems utilize two controllers - the other controller can be used for dragging the attribute from the panel.
 
 ![Attribute assignment in 6DOF.](images/sketch_6dofpanel.png)
 
@@ -52,7 +52,7 @@ Another limitation of 3DOF headsets is their controller (provided there is any).
 
 ![Initial user interface design for Navigator.](images/ui_design.png)
 
-The January build highlighted basic interactions in 3DOF. User interface design was influenced by Google's Material Design[1] and a tech demo called Daydream Elements.[2] The user was able to select one of the preloaded datasets, create scatter plots and position them in space and assign attributes. The design of dataset panel remained unchanged in later revisions. Attributes are colored on assignment, which is useful when working with multiple plots. In this version, the user can assign attributes to spatial axes of a plot as well as the color feature, however the functionality is still quite basic - spatial axes only support numerical attributes, while the color feature only accepts categorical attributes. The background used a mixture of white and light gray and has been scrapped in future revisions due to the fact it caused fatigue.
+The January build highlighted basic interactions in 3DOF. User interface design was influenced by Google's Material Design[1] and a tech demo called Daydream Elements.[2] The user was able to select one of the preloaded datasets, create scatter plots, position them in space and assign attributes to them. The design of dataset panel remained unchanged in later revisions. Attributes are color-coded on assignment, which is useful when working with multiple plots. In this version, the user can assign attributes onto spatial axes of a plot as well as the color feature, however the functionality is still quite basic - spatial axes only support numerical attributes, while the color feature only accepts categorical attributes. The background used a mixture of white and light gray and has been scrapped in future revisions due to the fact that it caused fatigue.
 
 ![Screenshot from the January build of Navigator.](images/navigator_1901.jpg)
 
@@ -62,7 +62,7 @@ The next stage of prototyping involved using Microsoft Maquette. More detailed v
 
 ![Prototype of 3DOF interface.](images/maquette_databrush_3dof.png)
 
-New hierarchy was introduced around this time, alongside terminology like space and version. Space is defined as an area in which visualization takes place. Inside the space, the user can interact with multiple datasets, which can contain multiple versions. Attributes from datasets can be assigned to a number of plots, which in turn display data from the currently selected version.
+New hierarchy was introduced around this time, alongside terminology like space and version. *Space* is defined as an area in which visualization takes place. Inside the space, the user can interact with multiple *datasets*, which can contain multiple versions. Attributes from datasets can be assigned to a number of *plots*, which in turn display data from the currently selected *version*.
 
 ![Prototype of 6DOF interface highlighting the 6DOF data brush.](images/maquette_databrush_6dof.png)
 
@@ -80,23 +80,23 @@ Plots can be created by pointing at the floor and holding the trigger, which ope
 
 Plots can also be rotated 90 degrees by pointing at them and using the aforementioned flick gesture. In 3DOF, we try to mitigate the lack of positional movement (which further enhances spatial perception) by offering a free-form rotation mode, which is triggered by pointing at the plot and pressing down on the touchpad. Doing so maps the rotation of a controller onto the rotation of the plot.
 
-The plot can also be scaled, although the mechanics differ depending on the VR system used. In 6DOF, one can scale the plot by pointing at it with both controllers, pressing the trigger and dragging inwards or outwards, a fairly standard gesture in VR interface design. In 3DOF we are unable to use this gesture, as most 3DOF systems come with only one controller. We have instead chosen to utilize a twisting motion, where the user twists their wrist in order to control the plot's scale. Such interaction technique had been previously implemented in a VR game *Virtual Virtual Reality*.[4]
+The plot can also be scaled, although the mechanics differ depending on VR system used. In 6DOF, one can scale a plot by pointing at it with both controllers, pressing the trigger and dragging inwards or outwards, a fairly standard gesture in VR interface design. In 3DOF we are unable to use this gesture, as most 3DOF systems come with only one controller. We have instead chosen to utilize a twisting motion, where the user twists their wrist in order to control the plot's scale. Such interaction technique had been previously implemented in the VR game *Virtual Virtual Reality*.[4]
 
 ![Navigator's 6DOF interface.](images/cyberplot_6dof.png)
 
-Attributes can be dragged from the data brush onto individual plots by using the trigger button. In the case of scatter plots, they can be assigned to spatial axes and non-spatial features like color and size. When we assign an attribute onto spatial axes, the position of nodes is smoothly interpolated to their new position in order to provide a visual cue to the user. Nodes are depicted as sprites in order to increase performance on mobile hardware. Once an attribute is assigned, it is color-coded on both the plot and the data brush. Color-coding persists until it is removed from all plots. Assignments can be reversed by using the trigger button.
+Attributes can be dragged from the data brush onto individual plots by using the trigger button. In the case of scatter plots, they can be assigned to spatial axes and non-spatial features like color and size. When we assign an attribute onto spatial axes, the position of nodes is smoothly interpolated to their new position in order to provide a visual cue to the user. Once an attribute is assigned, it is color-coded on both the plot and the data brush. Color-coding persists until the attribute in question is removed from all plots. Assignments can be reversed by using the trigger button.
 
-Plots also display scales. For numerical attributes we display numerical values for a set number of steps, for categorical attributes, steps are made for each value. The user is able to slice the plot by creating bounds. These are created by pressing on a desired position on a scale.
+Scatter plots also display scales. For numerical attributes we display numerical values for a set number of steps, for categorical attributes, steps are made for each value. The user is able to slice the plot by creating bounds. These are created by pressing on a desired position on a scale.
 
 ## Lo-fi prototype #2
 
 The next iteration of prototyping revolved around work on immersive mode, statistics panel, collaboration features and a filtering interface.
 
-Immersive mode is a feature that enables the user to physically enter one of the plots. In addition to enabling the user to immerse themselves in a subset of data, it also allows us to do some technical optimization, an example of which is rendering glyphs in scatter plot. When immersive mode is inactive, all glyphs are rendered as billboarded sprites. Upon entering immersive mode, they change into 3D meshes, which is a necessity given they can move much closer to the user.
+Immersive mode is a feature that enables the user to physically enter one of the plots. In addition to enabling the user to immerse themselves in a subset of data, it also allows us to do some technical optimization, an example of which is rendering glyphs in scatter plots. When immersive mode is inactive, all glyphs are rendered as billboarded sprites. Upon entering immersive mode, they change into 3D meshes, which is a necessity given they can move much closer to the user.
 
 ![Prototype of the immersive mode.](images/maquette_statistics.png)
 
-When the user enters immersive mode, they have an option of displaying statistics for non-spatial features of the plot. These are displayed on a panel above the controller.
+When the user enters immersive mode, they have the option of displaying statistics for non-spatial features of the plot. These are displayed on a panel above the controller.
 
 ![Prototype of collaboration with two other users, one of which is inside immersive mode.](images/maquette_collaboration.png)
 
@@ -104,7 +104,7 @@ Collaborative features allow the user to invite their colleagues from within the
 
 ![Prototype of the filtering interface.](images/maquette_filtering.png)
 
-The last feature that we have prototyped is a plot-specific filtering system. It enables the user to select any numerical attribute from the current dataset and change the range of displayed values. This is an extension of the existing *slicing* mechanic in scatter plots.
+The last feature that we have prototyped is a plot-specific filtering system. It enables the user to select any numerical attribute from the current dataset and change the range of displayed values. This is an extension of the existing *slicing* mechanic present in scatter plots.
 
 ## December build (1912)
 
@@ -116,7 +116,7 @@ Users now have the ability to choose from 5 distinct plot types. These are selec
 
 ![Pie menu used for selecting the type of a newly created plot.](images/navigator_plotselector.png)
 
-Free-form rotation mode from the previous version was replaced by the all-new immersive mode. Inside immersive mode, the user can move freely in three dimensions by pointing their controller in a certain direction and pulling on the analog stick or by using the touchpad. A grid is displayed in the background as the user moves around the space in order to reduce the risk of motion sickness. This technique was borrowed from Google Earth VR.[5] As mentioned previously, a statistics panel, dubbed the *swatch* can be displayed at the user's convenience.
+Free-form rotation mode from the previous version was replaced by the all-new immersive mode. Inside immersive mode, the user can move freely in three dimensions by pointing their controller in a certain direction and pulling on the analog stick or by using the touchpad. A grid is displayed in the background as the user moves around the space in order to reduce the risk of motion sickness. This technique was borrowed from Google Earth VR.[5] As mentioned previously, a statistics panel, dubbed the *Swatch* can be displayed at the user's convenience.
 
 ![Screenshot of Navigator highlighting immersive mode. Swatch is visible on the left.](images/statistics.png)
 
@@ -136,7 +136,7 @@ The size feature in scatter plots only allows for assignment of numerical attrib
 
 ![Swatches for the plot's shape feature.](images/statistics_shape.png)
 
-When mapping a numerical attribute onto the shape feature, the values are distributed into two bins of equal or similar size based on the median value. Each bin is then assigned a shape. If the attribute in question is categorical, unique values are mapped onto three distinct shapes. If more than three unique values exist, one of the shapes is used for multiple values.
+When mapping a numerical attribute onto the shape feature, the values are divided into two bins of equal or similar size based on the median value. Each bin is then assigned a shape. If the attribute in question is categorical, unique values are mapped onto three distinct shapes. If more than three unique values exist, one of the shapes is used for multiple values.
 
 1. (materialdesign) https://material.io/design/
 2. (daydreamelements) https://developers.google.com/vr/elements/overview

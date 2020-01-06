@@ -65,14 +65,14 @@ We began by asking the participants a series of questions about their background
 - How much experience do you have with programming? (No experience/Little experience/Some experience/Lot of experience)
 - Have you ever used a BI/visual analytics tool in the past? (Yes/No, list software if any)
 
-Afterward completing the first part of our questionnaire, the users were shown two pieces of traditional visualization software - ParaView and Tableau. They were instructed to load a multivariate dataset from file, look up basic statistical information of each attribute, rename an attribute label, create a scatter plot, assign attributes onto spatial axes and color feature of the plot and lastly, to change the range of values shown on spatial axes. Second part of the questionnaire followed:
+After completing the first part of our questionnaire, participants were shown two pieces of traditional visualization software - ParaView and Tableau. They were instructed to load a multivariate dataset from file, look up basic statistical information for each attribute, rename an attribute label, create a scatter plot, assign attributes onto spatial axes and color feature of the plot and lastly, to change the range of values shown on spatial axes. Second part of the questionnaire followed:
 
 - I felt ParaView was easy to use. (1-5, where 5 denotes full agreement)
 - I felt Tableau was easy to use. (1-5)
 
 After answering the two questions, the participants were shown a video introducing them to our application. They were then instructed to launch Manager, create a user account, add a dataset, change attribute type, rename an attribute label, share a dataset with another user, accept an incoming share request and associate a fresh copy of Navigator with their account. A short demo of our plugin system had the participants load a dataset from R Studio.
 
-Brief demos of 3DOF and 6DOF versions of Navigator were then given, each preceded by a short tutorial video. Participants were instructed to load a previously added dataset, create a plot, change plot assignments, position the plot in space, toggle between different versions of a single dataset and delete the plot. The 3DOF version was tested on an Oculus Go, while Oculus Rift was used for testing the 6DOF version of Navigator.
+Brief demos of 3DOF and 6DOF versions of Navigator were then given, each preceded by a short tutorial video. Participants were instructed to load the previously added dataset, create a plot, change plot assignments, position the plot in space, toggle between different versions of a single dataset and delete the plot. The 3DOF version was tested on an Oculus Go, while Oculus Rift was used for testing the 6DOF version of Navigator.
 
 A timed test was then administered with participants being given the following tasks:
 
@@ -100,24 +100,24 @@ A timed test was then administered with participants being given the following t
 22. Assign *Rings* to plot's size.
 23. Slice *Whole weight* from 0.8 to 2.0.
 
-After concluding the timed test, participants were given the third and final part of our questionnaire. There were tasked to choose whether they agree with the following statements on a scale from 1 to 5:
+After concluding the timed test, participants were given the third and final part of our questionnaire. They were tasked to choose whether they agree with the following statements on a scale from 1 to 5:
 
 - Cyberplot is easier to use than traditional 2D visualization tools.
 - I was able to easily grasp information presented to me.
 - Moving objects in 3D space felt intuitive.
 - The size of the virtual environment felt adequate.
-- I perceived benefit in percepting data using cyberplot compared to using traditional 2D tools.
+- I perceived benefit in percepting data using Cyberplot compared to using traditional 2D tools.
 - The process of getting data from computer to virtual reality felt straightforward.
 - Scale labels on plot were legible.
 - Changing slice boundaries was easy.
 - Free-form rotation felt natural.
-- Using cyberplot felt fun.
+- Using Cyberplot felt fun.
 - Plot nodes felt three-dimensional.
 - I did not encounter issues with controls in VR. (white/3DOF headset)
 - I did not encounter issues with controls in VR. (black/6DOF headset)
 - Using the plugin system was easy.
 
-An open-ended question followed - "Is there anything you found frustrating about cyberplot? Are there any features or plugin integrations you would like to see implemented?".
+An open-ended question followed - "Is there anything you found frustrating about Cyberplot? Are there any features or plugin integrations you would like to see implemented?".
 
 Participants were then asked to rank the following plots in the order of their interest:
 
@@ -203,14 +203,14 @@ The timed test consisted of the following tasks:
 32. Listen to instructions.
 33. Listen to instructions.
 
-The last three tasks were more involved and required answering an open-ended question regarding a specific dataset based on observation. As such, they require manual confirmation by the test conductor, which is done by pressing a button on a wirelessly-connected game controller (DualShock 4). The reporting capabilities of our automated testing suite were greatly improved with the addition of action-based logging - please see the appendix for details.
+The last three tasks were more involved and required answering an open-ended question regarding a specific dataset based on observation. As such, they require manual confirmation by the test conductor, which is done by pressing a button on a connected game controller (DualShock 4). The reporting capabilities of our automated testing suite were greatly improved with the addition of action-based logging - please see the appendix for details.
 
 The third part has been updated with newly added features and rephrased as to reduce any possible bias, which the author felt were present in the first version of the questionnaire. Participants were asked to rank their satisfaction with the following:
 
 - Ease of use compared to 2D visualization tools (ex. Tableau)
 - Ease of use compared to immersive analytics tools (ex. Virtualitics)
 - Intuitiveness of plot positioning in 3D space
-- Added benefit in perception of data using cyberplot compared to traditional 2D tools
+- Added benefit in perception of data using Cyberplot compared to traditional 2D tools
 - Ease of loading new datasets from a local file (Manager)
 - Ease of modifying uploaded datasets (Manager)
 - Legibility of text on scales
@@ -229,7 +229,7 @@ An open-ended question then followed with the same phrasing as in the original v
 
 This time all of our seven participants have had at least some experience with virtual reality. One of our participants answered that they often suffer from motion sickness in VR, although according to their SSQ results, they did not feel any moderate or severe discomfort, whereas another participant, who does not typically suffer from motion sickness, noted that they suffered from moderate fatigue and blurred vision after using our application. Most of our test participants had at least some experience with programming. There was again correlation between programming experience and perceived ease of use of our plugin system.
 
-The average rating of Tableau was 3.3/5, whereas Virtualitics fared worse at 2.6/5. For comparison, Navigator received a score of 4/5. We partially attribute the suboptimal rating for Virtualitics to the fact that we have used HTC Vive during its demonstration. The reduced comfort of its controller in comparison with Oculus Touch may have resulted in a slight negative bias. One particular point of discomfort with Virtualitics's UI was the lack of clarity in regards to mapping geospatial attributes onto a globe plot, since the software lists spatial axes as X, Y and Z independently on plot type. Navigator's *latitude*, *longitude* and *value* feature descriptions were universally praised in comparison.
+The average rating of Tableau was 3.3/5, whereas Virtualitics fared worse at 2.6/5. For comparison, Navigator received a score of 4/5. We partially attribute the suboptimal rating for Virtualitics to the fact that we have used HTC Vive during its demonstration. The reduced comfort of its controller in comparison to Oculus Touch may have resulted in a slight negative bias. One particular point of discomfort with Virtualitics's UI was the lack of clarity in regards to mapping geospatial attributes onto a globe plot, since the software lists spatial axes as X, Y and Z independently on plot type. Navigator's *latitude*, *longitude* and *value* feature descriptions were universally praised in comparison.
 
 Opinion on the ease of use of Navigator in comparison to Tableau were mixed with two participants preferring the more traditional WIMP interface. However, most participants see the added benefit in using immersive tools. The weakest area of Navigator seems to be the newly added immersive mode with navigation inside immersion mode ranked at 2.9/5. Complaints include the lack of ability to rotate the plot without exiting immersive mode and a suboptimal speed of movement, although none of the participants complained about sickness when positioning a plot in immersive mode, no doubt helped by the addition of the static grid that fills the environment when doing so.
 
@@ -241,10 +241,10 @@ Overall interest in plots was as follows (1 - most interested):
 4. surface plot
 5. bar plot
 
-We can see that the interest in the 3D bar plot fell considerably compared to the first round of testing. One of the participants righfully complained about occlusion present in this particular plot type. We think that adding the ability to slice bar plots could mitigate some of their faults. Globe and map plots were once again voted as the most interesting plot types by participants.
+We can see that the interest in the 3D bar plot fell considerably compared to the first round of testing. One of the participants complained about occlusion present in this particular plot type. We think that adding the ability to slice bar plots could mitigate some of their faults. Globe and map plots were once again voted as the most interesting plot types by participants.
 
 When it comes to iconography, the participants were able to associate most icons with their correct meaning, however there were some outliers. The value icon (three vertical bars) was only recognized in one instance, the arrow sign for vector also proved challenging and will have to be redesigned. Categorical attributes were mostly referred to as *shapes*, corresponding to their association with the glyph feature in scatter plots.
 
-Further criticism included the design of feature labels in plots, which only display after pointing at the graph with a controller and the quality of feedback when selecting an attribute from the data brush. One participant suggested that labels in scatterplots could simultaneously display values from multiple attributes, while another suggested the use of an analog stick to flip between various views inside the statistics panel (*swatch*).
+Further criticism included the design of feature labels in plots, which only display after pointing at the graph with a controller and the quality of feedback when selecting an attribute from the data brush. One participant suggested that labels in scatter plots could simultaneously display values from multiple attributes, while another suggested the use of an analog stick to flip between various views inside the statistics panel (*swatch*).
 
 1. (sickness) https://www.researchgate.net/publication/221494074_Simulator_Sickness_in_Mobile_Spatial_Sound_Spaces

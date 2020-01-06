@@ -1,6 +1,6 @@
 # Used technology
 
-In this chapter we briefly discuss the technological stack behind our application suite, which consists of a web component called Manager and a VR application called Navigator. Plugins are omitted, as their implementation varies on the language that they interface with.
+In this chapter we will briefly discuss the technological stack behind our applications suite, which consists of a web component called Manager and a VR application called Navigator. Plugins are omitted, as their implementation varies on the language that they interface with.
 
 All user data is stored in Manager and is exposed to Navigator using a set of application programming interfaces (API) adhering to the REST (Representational State Transfer) standard.[1]
 
@@ -12,7 +12,7 @@ Manager consists of a back end written in Flask, a lightweight web application f
 
 Navigator has been written in C# using Unity game engine. Unity allows us to deploy on mobile headsets running the Android operating system as well as personal computers running Microsoft Windows, while maintaining a single codebase.
 
-In order to support multiple head-mounted units (HMD), we have to target a number of software development kits (SDK), namely Oculus Utilities (Oculus Go, Quest and Rift)[8], Microsoft Mixed Reality Toolkit (Windows Mixed Reality headsets)[9] and Valve's OpenVR (HTC Vive, Valve Index).[10] While these tools provide some degree of compatibility with headsets from other manufacturers, we have opted to use a wrapper called TButt, which provides abstractions of basic functions for controlling handling and locomotion, greatly reducing complexity of our code.[11]
+In order to support multiple head-mounted units (HMD), we have to target a number of software development kits (SDK), namely Oculus Utilities (Oculus Go, Quest and Rift)[8], Microsoft Mixed Reality Toolkit (Windows Mixed Reality headsets)[9] and Valve's OpenVR (HTC Vive, Valve Index).[10] While these tools provide some degree of compatibility with headsets from other manufacturers, we have opted to use a wrapper called TButt, which provides abstractions of basic functions for controller handling and locomotion, greatly reducing complexity of our code.[11]
 
 SDK incompatibilities have long been a large issue in VR development, however the release of version 1.0 of Khronos Group's OpenXR at SIGGRAPH 2019 conference held in July 2019 signifies a leap in this area by offering standardized APIs for all HMDs. The specification is supported by all major VR/AR HMD vendors, as well as other stakeholders in the technology space.[12]
 

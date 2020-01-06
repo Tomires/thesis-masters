@@ -1,6 +1,6 @@
 # Plugins
 
-Plugins are intended for developers or power users to incorporate dataset creation and updating functionality into their applications and scripts. We have implemented integrations for Python and R, as they are the most common programming languages used by data scientists. Manager provides a set of APIs that enable outside developers to create their own integrations and as both Manager and official plugins are open-source[1], it is a very straightforward process.
+Plugins are intended for developers or power users to incorporate dataset creation and updating functionality into their applications and scripts. We have implemented integrations for Python and R, as they are the most commonly used programming languages by data scientists. Manager provides a set of APIs that enable outside developers to create their own integrations and as both Manager and official plugins are open-source[1], it is a very straightforward process.
 
 ![Guide for adding a dataset using Python.](images/manager_python.png)
 
