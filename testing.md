@@ -203,7 +203,7 @@ The timed test consisted of the following tasks:
 32. Listen to instructions.
 33. Listen to instructions.
 
-The last three tasks were more involved and required answering an open-ended question regarding a specific dataset based on observation. The reporting capabilities of our automated testing suite were greatly improved with the addition of action-based logging - please see the appendix for details.
+The last three tasks were more involved and required answering an open-ended question regarding a specific dataset based on observation. As such, they require manual confirmation by the test conductor, which is done by pressing a button on a wirelessly-connected game controller (DualShock 4). The reporting capabilities of our automated testing suite were greatly improved with the addition of action-based logging - please see the appendix for details.
 
 The third part has been updated with newly added features and rephrased as to reduce any possible bias, which the author felt were present in the first version of the questionnaire. Participants were asked to rank their satisfaction with the following:
 
