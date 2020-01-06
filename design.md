@@ -203,7 +203,7 @@ Over the years, there have been many attempts to come up with a solution that mi
 
 ![Example use of Punchkeyboard.](images/punch_keyboard.png)[4]
 
-The three distinct components that we have chosen to divide our environment into are as follows - plugins, Manager and Navigator. *Plugins* are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. *Manager* enables the user to view and edit all of their datasets and also facilitates uploading files from a local computer. *Navigator* allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
+The three distinct components that we have chosen to divide our environment into are as follows - plugins, Manager and Navigator. *Plugins* are API integrations written for different programming languages that allow the user to create a new dataset or update an existing one. *Manager* enables the user to view and edit all of their datasets and also facilitates loading files from the local computer. *Navigator* allows the user to interact with their data in virtual reality. The following visualization pipeline shows the distribution of tasks among our components.
 
 ![Adapted version of Haber–McNabb dataflow model for scientific visualization in the context of our environment.](images/pipeline.pdf)[5]
 
