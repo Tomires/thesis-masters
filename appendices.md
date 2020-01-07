@@ -21,19 +21,18 @@ c. Not present as a separate action in the original paper. Instead it is include
 
 In addition to questionnaires, we made use of automated user testing environments to help analyze user behaviour within our application. In addition to times measured for each task, generated test reports list actions conducted by the user complete with timestamps. These include the following:
 
-- Opening up a dataset.
-- Spawning a plot of a certain type.
-- Assignment of attribute onto an axis.
-- Deassignment of an attribute from a plot axis.
-- Modification of attribute range.
-- Flick-based plot rotation.
-- Entering/leaving immersive mode.
-- Accessing data brush panel.
-- Accessing the Swatch (statistics panel) inside immersive mode.
-- Change of plot scale.
-- Change of plot scale in immersive mode.
-- Movement in immersive mode.
-- Plot deletion.
+- opening up a dataset,
+- spawning a plot of a certain type,
+- assignment of attribute onto an axis,
+- deassignment of an attribute from a plot axis,
+- modification of attribute range,
+- flick-based plot rotation,
+- entering/leaving immersive mode,
+- accessing data brush panel,
+- accessing the Swatch (statistics panel) inside immersive mode,
+- change of plot scale,
+- movement in immersive mode,
+- plot deletion
 
 Generated test reports from the second round of testing are available as part of data provided with this thesis.
 
@@ -61,7 +60,7 @@ sudo ./install.sh
 
 Follow on-screen prompts and then wait for the installation to finish. Manager instance should then be accessible using a standard web browser.
 
-## Plugins
+### Plugins
 
 Included are sample integrations for Python and R. Before use, please modify the *DEFAULT_URL* variable or specify the *serverUrl* argument when calling any of the functions. It should point to an IP address or a hostname of a machine running an instance of Manager.
 

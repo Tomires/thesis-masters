@@ -63,12 +63,12 @@ Clicking on a dataset in the sidebar brings up the dataset view, which contains 
 
 If we return back to dataset-wide actions, we have the following options:
 
-- Update dataset
-- Manage dataset versions
-- Download dataset file
-- Share dataset with another user
-- Rename dataset
-- Delete dataset
+- update dataset
+- manage dataset versions
+- download dataset file
+- share dataset with another user
+- rename dataset
+- delete dataset
 
 ![Dataset actions. From left: Update, manage versions, download, share, rename, delete.](images/manager_actions.png)
 

@@ -58,7 +58,7 @@ The January build highlighted basic interactions in 3DOF. User interface design 
 
 ## Lo-fi prototype
 
-The next stage of prototyping involved using Microsoft Maquette. More detailed versions of panels discussed in the subchapter on interaction design were created, this time taking multiple datasets into account.
+The next stage of prototyping involved using Microsoft Maquette.[3] More detailed versions of panels discussed in the subchapter on interaction design were created, this time taking multiple datasets into account.
 
 ![Prototype of 3DOF interface.](images/maquette_databrush_3dof.png)
 
@@ -72,7 +72,7 @@ The August build of Navigator added integration with Manager. When the user firs
 
 ![Left: Pairing prompt in Navigator. Right: Adding a new headset in Manager.](images/pairing.png)
 
-After logging in, the user can select one of their datasets, which is then loaded onto what we call a *data brush*, essentially a simplified version of Manager's dataset view. In the 3DOF version, the databrush is present in a fixed position in front of the user's pelvis and while its visibility can be toggled, it is visible for the most part. In the 6DOF version, the user can display the data brush by holding down the grip button. It is then displayed on top of one of their controllers. The data brush displays dataset metadata and attribute listings, which look similar to their Manager counterpart. In order to reduce the amount of text and provide more information, we have opted to display histograms in place of data preview for numerical attributes. The user can move between pages of attributes by utilizing a flick gesture using their controller's analog stick or touchpad. They are also able to switch between versions if versioning is on for selected dataset and load additional datasets. The users are able to have multiple datasets open at the same time.
+After logging in, the user can select one of their datasets, which is then loaded onto what we call a *data brush*, essentially a simplified version of Manager's dataset view. In the 3DOF version, the data brush is present in a fixed position in front of the user's pelvis and while its visibility can be toggled, it is visible for the most part. In the 6DOF version, the user can display the data brush by holding down the grip button. It is then displayed on top of one of their controllers. The data brush displays dataset metadata and attribute listings, which look similar to their Manager counterpart. In order to reduce the amount of text and provide more information, we have opted to display histograms in place of data preview for numerical attributes. The user can move between pages of attributes by utilizing a flick gesture using their controller's analog stick or touchpad. They are also able to switch between versions if versioning is on for selected dataset and load additional datasets. The users are able to have multiple datasets open at the same time.
 
 ![Navigator's 3DOF interface.](images/cyberplot_3dof.png)
 

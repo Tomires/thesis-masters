@@ -121,10 +121,10 @@ An open-ended question followed - "Is there anything you found frustrating about
 
 Participants were then asked to rank the following plots in the order of their interest:
 
-- 3D bar plot
-- map plot
-- parallel coordinate plot
-- surface plot
+- 3D bar plot,
+- map plot,
+- parallel coordinate plot,
+- surface plot,
 - globe plot
 
 Testing concluded with a standardized Simulator Sickness Questionnaire (SSQ).[1]
@@ -137,10 +137,10 @@ When conducting demonstrations of Navigator, participants often had trouble reca
 
 Overall interest in plots was as follows (1 - most interested):
 
-1. globe plot
-2. map plot
-3. bar plot
-4. surface plot
+1. globe plot,
+2. map plot,
+3. bar plot,
+4. surface plot,
 5. parallel coordinate plot
 
 Participants experienced at worst mild symptoms of motion sickness (with a 50% incidence among those susceptible to motion sickness in VR as per question #2).
@@ -178,23 +178,23 @@ The timed test consisted of the following tasks:
 7. Assign *Class* to label.
 8. Rotate the plot.
 9. Enter immersive mode.
-10. Slice Sepal Width approximately from 0.78 to 1.8.
-11. Slice Petal Width approximately from 2.8 to 3.7.
+10. Slice *Sepal Width* approximately from 0.78 to 1.8.
+11. Slice *Petal Width* approximately from 2.8 to 3.7.
 12. Scale the plot.
 13. Move about.
 14. Exit immersive mode.
 15. Load dataset *Population*.
 16. Create a globe plot.
-17. Assign latitude.
-18. Assign longitude.
-19. Assign population onto values.
+17. Assign *latitude*.
+18. Assign *longitude*.
+19. Assign *population* onto values.
 20. Enter immersive mode.
 21. Open up the statistics panel.
 22. Scale and rotate the globe.
 23. Exit immersive mode.
 24. Create a surface plot.
-25. Load dataset Sombrero.
-26. Assign values onto newly created surface plot.
+25. Load dataset *Sombrero*.
+26. Assign *values* onto newly created surface plot.
 27. Enter immersive mode.
 28. Move about.
 29. Exit immersive mode.
@@ -231,20 +231,20 @@ This time all of our seven participants have had at least some experience with v
 
 The average rating of Tableau was 3.3/5, whereas Virtualitics fared worse at 2.6/5. For comparison, Navigator received a score of 4/5. We partially attribute the suboptimal rating for Virtualitics to the fact that we have used HTC Vive during its demonstration. The reduced comfort of its controller in comparison to Oculus Touch may have resulted in a slight negative bias. One particular point of discomfort with Virtualitics's UI was the lack of clarity in regards to mapping geospatial attributes onto a globe plot, since the software lists spatial axes as X, Y and Z independently on plot type. Navigator's *latitude*, *longitude* and *value* feature descriptions were universally praised in comparison.
 
-Opinion on the ease of use of Navigator in comparison to Tableau were mixed with two participants preferring the more traditional WIMP interface. However, most participants see the added benefit in using immersive tools. The weakest area of Navigator seems to be the newly added immersive mode with navigation inside immersion mode ranked at 2.9/5. Complaints include the lack of ability to rotate the plot without exiting immersive mode and a suboptimal speed of movement, although none of the participants complained about sickness when positioning a plot in immersive mode, no doubt helped by the addition of the static grid that fills the environment when doing so.
+Opinions on the ease of use of Navigator in comparison to Tableau were mixed with two participants preferring the more traditional WIMP interface. However, most participants see the added benefit in using immersive tools. The weakest area of Navigator seems to be the newly added immersive mode with navigation inside immersion mode ranked at 2.9/5. Complaints include the lack of ability to rotate the plot without exiting immersive mode and a suboptimal speed of movement, although none of the participants complained about sickness when positioning a plot in immersive mode, no doubt helped by the addition of the static grid that fills the environment when doing so.
 
 Overall interest in plots was as follows (1 - most interested):
 
-1. globe plot
-2. map plot
-3. scatter plot
-4. surface plot
+1. globe plot,
+2. map plot,
+3. scatter plot,
+4. surface plot,
 5. bar plot
 
 We can see that the interest in the 3D bar plot fell considerably compared to the first round of testing. One of the participants complained about occlusion present in this particular plot type. We think that adding the ability to slice bar plots could mitigate some of their faults. Globe and map plots were once again voted as the most interesting plot types by participants.
 
 When it comes to iconography, the participants were able to associate most icons with their correct meaning, however there were some outliers. The value icon (three vertical bars) was only recognized in one instance, the arrow sign for vector also proved challenging and will have to be redesigned. Categorical attributes were mostly referred to as *shapes*, corresponding to their association with the glyph feature in scatter plots.
 
-Further criticism included the design of feature labels in plots, which only display after pointing at the graph with a controller and the quality of feedback when selecting an attribute from the data brush. One participant suggested that labels in scatter plots could simultaneously display values from multiple attributes, while another suggested the use of an analog stick to flip between various views inside the statistics panel (*swatch*).
+Further criticism included the design of feature labels in plots, which only display after pointing at the graph with a controller and the quality of feedback when selecting an attribute from the data brush. One participant suggested that labels in scatter plots could simultaneously display values from multiple attributes, while another suggested the use of an analog stick to flip between various views inside the statistics panel (*Swatch*).
 
 1. (sickness) https://www.researchgate.net/publication/221494074_Simulator_Sickness_in_Mobile_Spatial_Sound_Spaces
