@@ -1,6 +1,6 @@
 # Testing
 
-In this chapter, we will compare the efficiency of our application against that of its contemporary alternatives introduced in chapter 2, introduce our testing methodology and present some of the findings.
+In this chapter, we will compare the efficiency of our application against that of its contemporary alternatives introduced in the first chapter, introduce our testing methodology and present some of the findings.
 
 ## Example task
 
@@ -33,7 +33,7 @@ The following table lists all KLM operations necessary to complete the task of c
 a. Only applies to 6DOF version
 b. Only applies to 3DOF version
 
-The total time necessary to complete the tasks is 29.55 seconds for 6DOF and 30.1 seconds for 3DOF versions, considerably faster than with contemporary tools introduced in chapter 2.
+The total time necessary to complete the tasks is 29.55 seconds for 6DOF and 30.1 seconds for 3DOF versions, considerably faster than with contemporary tools introduced in the first chapter.
 
 ## User testing
 
