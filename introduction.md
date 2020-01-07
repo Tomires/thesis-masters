@@ -16,7 +16,7 @@ The thesis is comprised of the following chapters.
 
 In this chapter we are going to go over several examples of traditional data analytics and business intelligence software, i.e. software that runs on a personal computer and utilizes a flat user interface. We will try to assess the ease of use and come up with reasons why VR might help us in this space.
 
-### Analysis
+### Domain analysis
 
 In this chapter, we will analyze the state of virtual reality in 2019 and take a look at a couple examples of applications in the space of immersive analytics. Furthermore, we will define our target group and set design goals to help narrow down our scope.
 
@@ -40,7 +40,7 @@ This chapter concerns the design and implementation of Navigator, the VR compone
 
 In this chapter, we will compare the efficiency of our application against that of its contemporary alternatives introduced in chapter 1, introduce our testing methodology and present some of the findings.
 
-### Technology
+### Used technology
 
 In this chapter we will briefly discuss the technological stack behind our applications suite, which consists of a web component called Manager and a VR application called Navigator. Plugins are omitted, as their implementation varies on the language that they interface with.
 
